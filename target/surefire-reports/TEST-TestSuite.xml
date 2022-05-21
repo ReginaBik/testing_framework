@@ -1,0 +1,216 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<testsuite tests="6" failures="3" name="TestSuite" time="45.913" errors="0" skipped="2">
+  <properties>
+    <property name="java.runtime.name" value="OpenJDK Runtime Environment"/>
+    <property name="java.vm.version" value="18.0.1+0"/>
+    <property name="sun.boot.library.path" value="/opt/homebrew/Cellar/openjdk/18.0.1/libexec/openjdk.jdk/Contents/Home/lib"/>
+    <property name="maven.multiModuleProjectDirectory" value="/Users/reginabiktimirova/IdeaProjects/testng_framework"/>
+    <property name="java.vm.vendor" value="Homebrew"/>
+    <property name="java.vendor.url" value="https://github.com/Homebrew/homebrew-core/issues"/>
+    <property name="guice.disable.misplaced.annotation.check" value="true"/>
+    <property name="path.separator" value=":"/>
+    <property name="java.vm.name" value="OpenJDK 64-Bit Server VM"/>
+    <property name="user.country" value="US"/>
+    <property name="sun.java.launcher" value="SUN_STANDARD"/>
+    <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
+    <property name="user.dir" value="/Users/reginabiktimirova/IdeaProjects/testng_framework"/>
+    <property name="java.vm.compressedOopsMode" value="Zero based"/>
+    <property name="java.runtime.version" value="18.0.1+0"/>
+    <property name="os.arch" value="aarch64"/>
+    <property name="java.io.tmpdir" value="/var/folders/52/qhwbj7gn7y71h9lb75bf48700000gn/T/"/>
+    <property name="line.separator" value="
+"/>
+    <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
+    <property name="os.name" value="Mac OS X"/>
+    <property name="classworlds.conf" value="/opt/homebrew/Cellar/maven/3.8.5/libexec/bin/m2.conf"/>
+    <property name="sun.jnu.encoding" value="UTF-8"/>
+    <property name="java.library.path" value="/Users/reginabiktimirova/Library/Java/Extensions:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java:."/>
+    <property name="maven.conf" value="/opt/homebrew/Cellar/maven/3.8.5/libexec/conf"/>
+    <property name="jdk.debug" value="release"/>
+    <property name="java.class.version" value="62.0"/>
+    <property name="java.specification.name" value="Java Platform API Specification"/>
+    <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
+    <property name="os.version" value="12.2"/>
+    <property name="library.jansi.path" value="/opt/homebrew/Cellar/maven/3.8.5/libexec/lib/jansi-native"/>
+    <property name="http.nonProxyHosts" value="local|*.local|169.254/16|*.169.254/16"/>
+    <property name="user.home" value="/Users/reginabiktimirova"/>
+    <property name="user.timezone" value="America/Chicago"/>
+    <property name="file.encoding" value="UTF-8"/>
+    <property name="java.specification.version" value="18"/>
+    <property name="user.name" value="reginabiktimirova"/>
+    <property name="java.class.path" value="/opt/homebrew/Cellar/maven/3.8.5/libexec/boot/plexus-classworlds-2.6.0.jar"/>
+    <property name="java.vm.specification.version" value="18"/>
+    <property name="sun.arch.data.model" value="64"/>
+    <property name="sun.java.command" value="org.codehaus.plexus.classworlds.launcher.Launcher test"/>
+    <property name="java.home" value="/opt/homebrew/Cellar/openjdk/18.0.1/libexec/openjdk.jdk/Contents/Home"/>
+    <property name="apple.awt.application.name" value="Launcher"/>
+    <property name="user.language" value="en"/>
+    <property name="java.specification.vendor" value="Oracle Corporation"/>
+    <property name="java.vm.info" value="mixed mode, sharing"/>
+    <property name="java.version" value="18.0.1"/>
+    <property name="native.encoding" value="UTF-8"/>
+    <property name="java.vendor" value="Homebrew"/>
+    <property name="sun.stderr.encoding" value="UTF-8"/>
+    <property name="maven.home" value="/opt/homebrew/Cellar/maven/3.8.5/libexec"/>
+    <property name="file.separator" value="/"/>
+    <property name="java.version.date" value="2022-04-19"/>
+    <property name="java.vendor.url.bug" value="https://github.com/Homebrew/homebrew-core/issues"/>
+    <property name="sun.io.unicode.encoding" value="UnicodeBig"/>
+    <property name="sun.cpu.endian" value="little"/>
+    <property name="java.vendor.version" value="Homebrew"/>
+    <property name="sun.stdout.encoding" value="UTF-8"/>
+    <property name="socksNonProxyHosts" value="local|*.local|169.254/16|*.169.254/16"/>
+    <property name="ftp.nonProxyHosts" value="local|*.local|169.254/16|*.169.254/16"/>
+  </properties>
+  <testcase classname="scripts._02_TechGlobalTest" name="testApplicationFormHeading" time="34.699">
+    <failure message="no such element: Unable to locate element: {&quot;method&quot;:&quot;css selector&quot;,&quot;selector&quot;:&quot;#comp-kh9s3kyz3 span span&quot;}
+  (Session info: chrome=101.0.4951.64)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;Reginas-MBP.local.tld&apos;, ip: &apos;fe80:0:0:0:4cc:ab87:dbe1:8173%en0&apos;, os.name: &apos;Mac OS X&apos;, os.arch: &apos;aarch64&apos;, os.version: &apos;12.2&apos;, java.version: &apos;18.0.1&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 101.0.4951.64, chrome: {chromedriverVersion: 101.0.4951.41 (93c720db8323..., userDataDir: /var/folders/52/qhwbj7gn7y7...}, goog:chromeOptions: {debuggerAddress: localhost:49833}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: MAC, platformName: MAC, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: db5a22c1e3a48e7f65231abc11b2abbd
+*** Element info: {Using=css selector, value=#comp-kh9s3kyz3 span span}" type="org.openqa.selenium.NoSuchElementException">org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;css selector&quot;,&quot;selector&quot;:&quot;#comp-kh9s3kyz3 span span&quot;}
+  (Session info: chrome=101.0.4951.64)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;Reginas-MBP.local.tld&apos;, ip: &apos;fe80:0:0:0:4cc:ab87:dbe1:8173%en0&apos;, os.name: &apos;Mac OS X&apos;, os.arch: &apos;aarch64&apos;, os.version: &apos;12.2&apos;, java.version: &apos;18.0.1&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 101.0.4951.64, chrome: {chromedriverVersion: 101.0.4951.41 (93c720db8323..., userDataDir: /var/folders/52/qhwbj7gn7y7...}, goog:chromeOptions: {debuggerAddress: localhost:49833}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: MAC, platformName: MAC, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: db5a22c1e3a48e7f65231abc11b2abbd
+*** Element info: {Using=css selector, value=#comp-kh9s3kyz3 span span}
+	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:67)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:483)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByCssSelector(RemoteWebDriver.java:420)
+	at org.openqa.selenium.By$ByCssSelector.findElement(By.java:431)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+	at scripts._02_TechGlobalTest.testApplicationFormHeading(_02_TechGlobalTest.java:24)
+</failure>
+    <system-out>Configuring TestNG with: org.apache.maven.surefire.testng.conf.TestNG652Configurator@387c703b
+</system-out>
+    <system-err>SLF4J: Failed to load class &quot;org.slf4j.impl.StaticLoggerBinder&quot;.
+SLF4J: Defaulting to no-operation (NOP) logger implementation
+SLF4J: See http://www.slf4j.org/codes.html#StaticLoggerBinder for further details.
+Starting ChromeDriver 101.0.4951.41 (93c720db8323b3ec10d056025ab95c23a31997c9-refs/branch-heads/4951@{#904}) on port 1847
+Only local connections are allowed.
+Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
+ChromeDriver was started successfully.
+May 21, 2022 3:47:32 PM org.openqa.selenium.remote.ProtocolHandshake createSession
+INFO: Detected dialect: W3C
+</system-err>
+  </testcase>
+  <testcase classname="scripts._01_AppleTest" name="X" time="0.002">
+    <failure message="Failure on purpose" type="java.lang.AssertionError">java.lang.AssertionError: Failure on purpose
+	at org.testng.Assert.fail(Assert.java:97)
+	at scripts._01_AppleTest.X(_01_AppleTest.java:51)
+</failure>
+    <system-err>Starting ChromeDriver 101.0.4951.41 (93c720db8323b3ec10d056025ab95c23a31997c9-refs/branch-heads/4951@{#904}) on port 46721
+Only local connections are allowed.
+Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
+ChromeDriver was started successfully.
+May 21, 2022 3:48:13 PM org.openqa.selenium.remote.ProtocolHandshake createSession
+INFO: Detected dialect: W3C
+</system-err>
+  </testcase>
+  <testcase classname="scripts._01_AppleTest" name="testAppleTitle" time="3.217"/>
+  <testcase classname="scripts._01_AppleTest" name="setup" time="7.995">
+    <failure message="unknown error: Chrome failed to start: crashed.
+  (chrome not reachable)
+  (The process started from chrome location /Applications/Google Chrome.app/Contents/MacOS/Google Chrome is no longer running, so ChromeDriver is assuming that Chrome has crashed.)
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;Reginas-MBP.local.tld&apos;, ip: &apos;fe80:0:0:0:4cc:ab87:dbe1:8173%en0&apos;, os.name: &apos;Mac OS X&apos;, os.arch: &apos;aarch64&apos;, os.version: &apos;12.2&apos;, java.version: &apos;18.0.1&apos;
+Driver info: driver.version: Driver
+remote stacktrace: 0   chromedriver                        0x00000001031452c9 chromedriver + 5120713
+1   chromedriver                        0x00000001030d3e33 chromedriver + 4656691
+2   chromedriver                        0x0000000102cc3158 chromedriver + 393560
+3   chromedriver                        0x0000000102ce59fe chromedriver + 535038
+4   chromedriver                        0x0000000102ce1446 chromedriver + 517190
+5   chromedriver                        0x0000000102d1b140 chromedriver + 753984
+6   chromedriver                        0x0000000102d15373 chromedriver + 729971
+7   chromedriver                        0x0000000102ceb609 chromedriver + 558601
+8   chromedriver                        0x0000000102cec635 chromedriver + 562741
+9   chromedriver                        0x0000000103117b1d chromedriver + 4934429
+10  chromedriver                        0x000000010311c295 chromedriver + 4952725
+11  chromedriver                        0x00000001031213cf chromedriver + 4973519
+12  chromedriver                        0x000000010311ccba chromedriver + 4955322
+13  chromedriver                        0x00000001030f737c chromedriver + 4801404
+14  chromedriver                        0x0000000103136c68 chromedriver + 5061736
+15  chromedriver                        0x0000000103136def chromedriver + 5062127
+16  chromedriver                        0x000000010314c5e5 chromedriver + 5150181
+17  libsystem_pthread.dylib             0x00007ff81dcb64f4 _pthread_start + 125
+18  libsystem_pthread.dylib             0x00007ff81dcb200f thread_start + 15
+" type="org.openqa.selenium.WebDriverException">org.openqa.selenium.WebDriverException: unknown error: Chrome failed to start: crashed.
+  (chrome not reachable)
+  (The process started from chrome location /Applications/Google Chrome.app/Contents/MacOS/Google Chrome is no longer running, so ChromeDriver is assuming that Chrome has crashed.)
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;Reginas-MBP.local.tld&apos;, ip: &apos;fe80:0:0:0:4cc:ab87:dbe1:8173%en0&apos;, os.name: &apos;Mac OS X&apos;, os.arch: &apos;aarch64&apos;, os.version: &apos;12.2&apos;, java.version: &apos;18.0.1&apos;
+Driver info: driver.version: Driver
+remote stacktrace: 0   chromedriver                        0x00000001031452c9 chromedriver + 5120713
+1   chromedriver                        0x00000001030d3e33 chromedriver + 4656691
+2   chromedriver                        0x0000000102cc3158 chromedriver + 393560
+3   chromedriver                        0x0000000102ce59fe chromedriver + 535038
+4   chromedriver                        0x0000000102ce1446 chromedriver + 517190
+5   chromedriver                        0x0000000102d1b140 chromedriver + 753984
+6   chromedriver                        0x0000000102d15373 chromedriver + 729971
+7   chromedriver                        0x0000000102ceb609 chromedriver + 558601
+8   chromedriver                        0x0000000102cec635 chromedriver + 562741
+9   chromedriver                        0x0000000103117b1d chromedriver + 4934429
+10  chromedriver                        0x000000010311c295 chromedriver + 4952725
+11  chromedriver                        0x00000001031213cf chromedriver + 4973519
+12  chromedriver                        0x000000010311ccba chromedriver + 4955322
+13  chromedriver                        0x00000001030f737c chromedriver + 4801404
+14  chromedriver                        0x0000000103136c68 chromedriver + 5061736
+15  chromedriver                        0x0000000103136def chromedriver + 5062127
+16  chromedriver                        0x000000010314c5e5 chromedriver + 5150181
+17  libsystem_pthread.dylib             0x00007ff81dcb64f4 _pthread_start + 125
+18  libsystem_pthread.dylib             0x00007ff81dcb200f thread_start + 15
+	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:67)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:483)
+	at org.openqa.selenium.remote.W3CHandshakeResponse.lambda$errorHandler$0(W3CHandshakeResponse.java:62)
+	at org.openqa.selenium.remote.HandshakeResponse.lambda$getResponseFunction$0(HandshakeResponse.java:30)
+	at org.openqa.selenium.remote.ProtocolHandshake.lambda$createSession$0(ProtocolHandshake.java:126)
+	at java.base/java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:197)
+	at java.base/java.util.Spliterators$ArraySpliterator.tryAdvance(Spliterators.java:1002)
+	at java.base/java.util.stream.ReferencePipeline.forEachWithCancel(ReferencePipeline.java:129)
+	at java.base/java.util.stream.AbstractPipeline.copyIntoWithCancel(AbstractPipeline.java:527)
+	at java.base/java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:513)
+	at java.base/java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:499)
+	at java.base/java.util.stream.FindOps$FindOp.evaluateSequential(FindOps.java:150)
+	at java.base/java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234)
+	at java.base/java.util.stream.ReferencePipeline.findFirst(ReferencePipeline.java:647)
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:128)
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:74)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:136)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:213)
+	at org.openqa.selenium.remote.RemoteWebDriver.&lt;init&gt;(RemoteWebDriver.java:131)
+	at org.openqa.selenium.chrome.ChromeDriver.&lt;init&gt;(ChromeDriver.java:181)
+	at org.openqa.selenium.chrome.ChromeDriver.&lt;init&gt;(ChromeDriver.java:168)
+	at org.openqa.selenium.chrome.ChromeDriver.&lt;init&gt;(ChromeDriver.java:123)
+	at utilities.Driver.getDriver(Driver.java:26)
+	at scripts._01_AppleTest.setup(_01_AppleTest.java:18)
+</failure>
+    <system-err>Starting ChromeDriver 101.0.4951.41 (93c720db8323b3ec10d056025ab95c23a31997c9-refs/branch-heads/4951@{#904}) on port 9251
+Only local connections are allowed.
+Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
+ChromeDriver was started successfully.
+</system-err>
+  </testcase>
+  <testcase classname="scripts._01_AppleTest" name="testAppleURL" time="0">
+    <skipped/>
+  </testcase>
+  <testcase classname="scripts._01_AppleTest" name="teardown" time="0">
+    <skipped/>
+  </testcase>
+</testsuite>
