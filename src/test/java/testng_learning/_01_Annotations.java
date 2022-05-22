@@ -4,6 +4,7 @@ import org.testng.annotations.*;
 
 public class _01_Annotations {
 
+    /*
     @BeforeSuite
     public void beforeSuite(){
         System.out.println("This is BEFORE SUITE");
@@ -55,7 +56,7 @@ public class _01_Annotations {
     public void afterSuite(){
         System.out.println("This is AFTER SUITE");
     }
-
+    */
 
 
 }
