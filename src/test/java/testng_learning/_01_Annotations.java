@@ -20,12 +20,12 @@ public class _01_Annotations {
     }
 
 
-    @BeforeMethod
+    @BeforeMethod    //use each time we set up the driver before doing automation test
     public void beforeMethod(){
         System.out.println("This is BEFORE METHOD");
     }
 
-    @AfterMethod
+    @AfterMethod //executed after each test. mostly quits the browser and link
     public void afterMethod(){
         System.out.println("This is AFTER METHOD");
     }
