@@ -1,22 +1,10 @@
 package scripts;
 
-import io.github.bonigarcia.wdm.WebDriverManager;
-import org.openqa.selenium.WebDriver;
 import org.testng.Assert;
-import org.testng.annotations.AfterMethod;
-import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
-import utilities.Driver;
 
-public class _01_AppleTest {
-    //Declare your driver
-    WebDriver driver;
+public class _01_AppleTest extends Base {
 
-    // 1. Initial set up - before each test
-    @BeforeMethod
-    public void setup(){
-        driver = Driver.getDriver();
-    }
 
     // 2. Validation of test - test
     @Test
@@ -51,11 +39,6 @@ public class _01_AppleTest {
         Assert.fail("Failure on purpose");
     }
 
-    // 3. Teardown actions - after each test
-    @AfterMethod
-    public void teardown(){
-        Driver.quitDriver();
-    }
 /* public static void main(String[] args) {
         // 1. Initial set up - before each test
         WebDriver driver = Driver.getDriver();

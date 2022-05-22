@@ -1,20 +1,12 @@
 package scripts;
 
 import org.openqa.selenium.By;
-import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.testng.Assert;
-import org.testng.annotations.AfterMethod;
-import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
-import utilities.Driver;
 
-public class _02_TechGlobalTest {
-    WebDriver driver;
-    @BeforeMethod
-    public void setup(){
-        driver = Driver.getDriver();
-    }
+public class _02_TechGlobalTest extends Base{
+
 
     @Test
     public void testApplicationFormHeading() {
@@ -30,10 +22,7 @@ public class _02_TechGlobalTest {
         Assert.assertEquals(heading1.getText(), "Application Form" );
     }
 
-    @AfterMethod
-    public void teardown(){
-        Driver.quitDriver();
-    }
+
 
 
 }
