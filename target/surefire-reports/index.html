@@ -91,7 +91,7 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">4 methods, 2 failed,  1 skipped,  1 passed</span>
+                    <span class="method-stats">7 methods, 2 failed,   5 passed</span>
                   </li>
                   <li>
                     <span class="method-list-title failed">Failed methods</span>
@@ -113,20 +113,6 @@
                     </div> <!-- method-list-content failed suite-Command_line_suite -->
                   </li>
                   <li>
-                    <span class="method-list-title skipped">Skipped methods</span>
-                    <span class="show-or-hide-methods skipped">
-                      <a href="#" panel-name="suite-Command_line_suite" class="hide-methods skipped suite-Command_line_suite"> (hide)</a> <!-- hide-methods skipped suite-Command_line_suite -->
-                      <a href="#" panel-name="suite-Command_line_suite" class="show-methods skipped suite-Command_line_suite"> (show)</a> <!-- show-methods skipped suite-Command_line_suite -->
-                    </span>
-                    <div class="method-list-content skipped suite-Command_line_suite">
-                      <span>
-                        <img src="skipped.png" width="3%"/>
-                        <a href="#" panel-name="suite-Command_line_suite" title="scripts._01_AppleTest" class="method navigator-link" hash-for-method="testAppleURL">testAppleURL</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                    </div> <!-- method-list-content skipped suite-Command_line_suite -->
-                  </li>
-                  <li>
                     <span class="method-list-title passed">Passed methods</span>
                     <span class="show-or-hide-methods passed">
                       <a href="#" panel-name="suite-Command_line_suite" class="hide-methods passed suite-Command_line_suite"> (hide)</a> <!-- hide-methods passed suite-Command_line_suite -->
@@ -136,6 +122,26 @@
                       <span>
                         <img src="passed.png" width="3%"/>
                         <a href="#" panel-name="suite-Command_line_suite" title="scripts._01_AppleTest" class="method navigator-link" hash-for-method="testAppleTitle">testAppleTitle</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Command_line_suite" title="scripts._01_AppleTest" class="method navigator-link" hash-for-method="testAppleURL">testAppleURL</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Command_line_suite" title="scripts._03_EtsyTest" class="method navigator-link" hash-for-method="testEtsyLogo">testEtsyLogo</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Command_line_suite" title="scripts._03_EtsyTest" class="method navigator-link" hash-for-method="testEtsySearch">testEtsySearch</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Command_line_suite" title="scripts._03_EtsyTest" class="method navigator-link" hash-for-method="testEtsySearchResult">testEtsySearchResult</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                     </div> <!-- method-list-content passed suite-Command_line_suite -->
@@ -161,14 +167,13 @@
                   <a name="testApplicationFormHeading">
                   </a> <!-- testApplicationFormHeading -->
                   <span class="method-name">testApplicationFormHeading</span>
-                  <div class="stack-trace">org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;css selector&quot;,&quot;selector&quot;:&quot;#comp-kh9s3kyz3 span span&quot;}
-  (Session info: chrome=101.0.4951.64)
+                  <div class="stack-trace">org.openqa.selenium.NoSuchElementException: Unable to locate element: #comp-kh9s3kyz3 span span
 For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
 Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
 System info: host: &apos;Reginas-MBP.local.tld&apos;, ip: &apos;fe80:0:0:0:4cc:ab87:dbe1:8173%en0&apos;, os.name: &apos;Mac OS X&apos;, os.arch: &apos;aarch64&apos;, os.version: &apos;12.2&apos;, java.version: &apos;18.0.1&apos;
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 101.0.4951.64, chrome: {chromedriverVersion: 101.0.4951.41 (93c720db8323..., userDataDir: /var/folders/52/qhwbj7gn7y7...}, goog:chromeOptions: {debuggerAddress: localhost:49833}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: MAC, platformName: MAC, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: db5a22c1e3a48e7f65231abc11b2abbd
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 100.0.2, javascriptEnabled: true, moz:accessibilityChecks: false, moz:buildID: 20220519220738, moz:geckodriverVersion: 0.31.0, moz:headless: false, moz:processID: 20450, moz:profile: /var/folders/52/qhwbj7gn7y7..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platform: MAC, platformName: MAC, platformVersion: 21.3.0, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: 13ffdcb3-1edc-48ea-9f1c-3e5077cd9ddb
 *** Element info: {Using=css selector, value=#comp-kh9s3kyz3 span span}
 	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
 	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
@@ -180,7 +185,7 @@ Session ID: db5a22c1e3a48e7f65231abc11b2abbd
 	at org.openqa.selenium.remote.RemoteWebDriver.findElementByCssSelector(RemoteWebDriver.java:420)
 	at org.openqa.selenium.By$ByCssSelector.findElement(By.java:431)
 	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
-	at scripts._02_TechGlobalTest.testApplicationFormHeading(_02_TechGlobalTest.java:24)
+	at scripts._02_TechGlobalTest.testApplicationFormHeading(_02_TechGlobalTest.java:16)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
 ... Removed 36 stack frames
 </div> <!-- stack-trace -->
@@ -200,7 +205,7 @@ Session ID: db5a22c1e3a48e7f65231abc11b2abbd
                   </a> <!-- X -->
                   <span class="method-name">X</span>
                   <div class="stack-trace">java.lang.AssertionError: Failure on purpose
-	at scripts._01_AppleTest.X(_01_AppleTest.java:51)
+	at scripts._01_AppleTest.X(_01_AppleTest.java:39)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
 ... Removed 34 stack frames
 </div> <!-- stack-trace -->
@@ -208,74 +213,6 @@ Session ID: db5a22c1e3a48e7f65231abc11b2abbd
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
           </div> <!-- suite-Command_line_suite-class-failed -->
-          <div class="suite-Command_line_suite-class-skipped">
-            <div class="main-panel-header rounded-window-top">
-              <img src="skipped.png"/>
-              <span class="class-name">scripts._01_AppleTest</span>
-            </div> <!-- main-panel-header rounded-window-top -->
-            <div class="main-panel-content rounded-window-bottom">
-              <div class="method">
-                <div class="method-content">
-                  <a name="testAppleURL">
-                  </a> <!-- testAppleURL -->
-                  <span class="method-name">testAppleURL</span>
-                  <div class="stack-trace">org.openqa.selenium.WebDriverException: unknown error: Chrome failed to start: crashed.
-  (chrome not reachable)
-  (The process started from chrome location /Applications/Google Chrome.app/Contents/MacOS/Google Chrome is no longer running, so ChromeDriver is assuming that Chrome has crashed.)
-Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
-System info: host: &apos;Reginas-MBP.local.tld&apos;, ip: &apos;fe80:0:0:0:4cc:ab87:dbe1:8173%en0&apos;, os.name: &apos;Mac OS X&apos;, os.arch: &apos;aarch64&apos;, os.version: &apos;12.2&apos;, java.version: &apos;18.0.1&apos;
-Driver info: driver.version: Driver
-remote stacktrace: 0   chromedriver                        0x00000001031452c9 chromedriver + 5120713
-1   chromedriver                        0x00000001030d3e33 chromedriver + 4656691
-2   chromedriver                        0x0000000102cc3158 chromedriver + 393560
-3   chromedriver                        0x0000000102ce59fe chromedriver + 535038
-4   chromedriver                        0x0000000102ce1446 chromedriver + 517190
-5   chromedriver                        0x0000000102d1b140 chromedriver + 753984
-6   chromedriver                        0x0000000102d15373 chromedriver + 729971
-7   chromedriver                        0x0000000102ceb609 chromedriver + 558601
-8   chromedriver                        0x0000000102cec635 chromedriver + 562741
-9   chromedriver                        0x0000000103117b1d chromedriver + 4934429
-10  chromedriver                        0x000000010311c295 chromedriver + 4952725
-11  chromedriver                        0x00000001031213cf chromedriver + 4973519
-12  chromedriver                        0x000000010311ccba chromedriver + 4955322
-13  chromedriver                        0x00000001030f737c chromedriver + 4801404
-14  chromedriver                        0x0000000103136c68 chromedriver + 5061736
-15  chromedriver                        0x0000000103136def chromedriver + 5062127
-16  chromedriver                        0x000000010314c5e5 chromedriver + 5150181
-17  libsystem_pthread.dylib             0x00007ff81dcb64f4 _pthread_start + 125
-18  libsystem_pthread.dylib             0x00007ff81dcb200f thread_start + 15
-
-	at org.openqa.selenium.remote.W3CHandshakeResponse.lambda$errorHandler$0(W3CHandshakeResponse.java:62)
-	at org.openqa.selenium.remote.HandshakeResponse.lambda$getResponseFunction$0(HandshakeResponse.java:30)
-	at org.openqa.selenium.remote.ProtocolHandshake.lambda$createSession$0(ProtocolHandshake.java:126)
-	at java.base/java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:197)
-	at java.base/java.util.Spliterators$ArraySpliterator.tryAdvance(Spliterators.java:1002)
-	at java.base/java.util.stream.ReferencePipeline.forEachWithCancel(ReferencePipeline.java:129)
-	at java.base/java.util.stream.AbstractPipeline.copyIntoWithCancel(AbstractPipeline.java:527)
-	at java.base/java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:513)
-	at java.base/java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:499)
-	at java.base/java.util.stream.FindOps$FindOp.evaluateSequential(FindOps.java:150)
-	at java.base/java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234)
-	at java.base/java.util.stream.ReferencePipeline.findFirst(ReferencePipeline.java:647)
-	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:128)
-	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:74)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:136)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
-	at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:213)
-	at org.openqa.selenium.remote.RemoteWebDriver.&lt;init&gt;(RemoteWebDriver.java:131)
-	at org.openqa.selenium.chrome.ChromeDriver.&lt;init&gt;(ChromeDriver.java:181)
-	at org.openqa.selenium.chrome.ChromeDriver.&lt;init&gt;(ChromeDriver.java:168)
-	at org.openqa.selenium.chrome.ChromeDriver.&lt;init&gt;(ChromeDriver.java:123)
-	at utilities.Driver.getDriver(Driver.java:26)
-	at scripts._01_AppleTest.setup(_01_AppleTest.java:18)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-... Removed 40 stack frames
-</div> <!-- stack-trace -->
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-            </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-Command_line_suite-class-skipped -->
           <div class="suite-Command_line_suite-class-passed">
             <div class="main-panel-header rounded-window-top">
               <img src="passed.png"/>
@@ -287,6 +224,42 @@ remote stacktrace: 0   chromedriver                        0x00000001031452c9 ch
                   <a name="testAppleTitle">
                   </a> <!-- testAppleTitle -->
                   <span class="method-name">testAppleTitle</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testAppleURL">
+                  </a> <!-- testAppleURL -->
+                  <span class="method-name">testAppleURL</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Command_line_suite-class-passed -->
+          <div class="suite-Command_line_suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">scripts._03_EtsyTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="testEtsyLogo">
+                  </a> <!-- testEtsyLogo -->
+                  <span class="method-name">testEtsyLogo</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testEtsySearch">
+                  </a> <!-- testEtsySearch -->
+                  <span class="method-name">testEtsySearch</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testEtsySearchResult">
+                  </a> <!-- testEtsySearchResult -->
+                  <span class="method-name">testEtsySearchResult</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
@@ -302,6 +275,7 @@ remote stacktrace: 0   chromedriver                        0x00000001031452c9 ch
 &lt;suite name=&quot;Command line suite&quot; verbose=&quot;0&quot;&gt;
   &lt;test thread-count=&quot;5&quot; name=&quot;Command line test&quot; verbose=&quot;0&quot;&gt;
     &lt;classes&gt;
+      &lt;class name=&quot;scripts._03_EtsyTest&quot;/&gt;
       &lt;class name=&quot;scripts._02_TechGlobalTest&quot;/&gt;
       &lt;class name=&quot;scripts._01_AppleTest&quot;/&gt;
     &lt;/classes&gt;
@@ -317,7 +291,7 @@ remote stacktrace: 0   chromedriver                        0x00000001031452c9 ch
           <div class="main-panel-content rounded-window-bottom">
             <ul>
               <li>
-                <span class="test-name">Command line test (2 classes)</span>
+                <span class="test-name">Command line test (3 classes)</span>
               </li>
             </ul>
           </div> <!-- main-panel-content rounded-window-bottom -->
@@ -343,28 +317,40 @@ data.addColumn('number', 'Number');
 data.addColumn('string', 'Method');
 data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
-data.addRows(4);
+data.addRows(7);
 data.setCell(0, 0, 0)
 data.setCell(0, 1, 'testApplicationFormHeading')
 data.setCell(0, 2, 'scripts._02_TechGlobalTest')
-data.setCell(0, 3, 34689);
+data.setCell(0, 3, 30723);
 data.setCell(1, 0, 1)
-data.setCell(1, 1, 'testAppleTitle')
-data.setCell(1, 2, 'scripts._01_AppleTest')
-data.setCell(1, 3, 3216);
+data.setCell(1, 1, 'testEtsySearchResult')
+data.setCell(1, 2, 'scripts._03_EtsyTest')
+data.setCell(1, 3, 2440);
 data.setCell(2, 0, 2)
-data.setCell(2, 1, 'X')
+data.setCell(2, 1, 'testAppleURL')
 data.setCell(2, 2, 'scripts._01_AppleTest')
-data.setCell(2, 3, 2);
+data.setCell(2, 3, 1033);
 data.setCell(3, 0, 3)
-data.setCell(3, 1, 'testAppleURL')
+data.setCell(3, 1, 'testAppleTitle')
 data.setCell(3, 2, 'scripts._01_AppleTest')
-data.setCell(3, 3, 0);
+data.setCell(3, 3, 856);
+data.setCell(4, 0, 4)
+data.setCell(4, 1, 'testEtsyLogo')
+data.setCell(4, 2, 'scripts._03_EtsyTest')
+data.setCell(4, 3, 826);
+data.setCell(5, 0, 5)
+data.setCell(5, 1, 'testEtsySearch')
+data.setCell(5, 2, 'scripts._03_EtsyTest')
+data.setCell(5, 3, 822);
+data.setCell(6, 0, 6)
+data.setCell(6, 1, 'X')
+data.setCell(6, 2, 'scripts._01_AppleTest')
+data.setCell(6, 3, 0);
 window.suiteTableData['Command_line_suite']= { tableData: data, tableDiv: 'times-div-Command_line_suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 37 seconds</span>
+              <span class="suite-total-time">Total running time: 36 seconds</span>
               <div id="times-div-Command_line_suite">
               </div> <!-- times-div-Command_line_suite -->
             </div> <!-- times-div -->
@@ -390,63 +376,100 @@ return data;
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <div class="chronological-class">
-              <div class="chronological-class-name">scripts._02_TechGlobalTest</div> <!-- chronological-class-name -->
+              <div class="chronological-class-name">scripts._03_EtsyTest</div> <!-- chronological-class-name -->
               <div class="configuration-method before">
                 <span class="method-name">setup</span>
                 <span class="method-start">0 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
-                <img src="failed.png">
-                </img>
-                <span class="method-name">testApplicationFormHeading</span>
-                <span class="method-start">4552 ms</span>
+                <span class="method-name">testEtsyLogo</span>
+                <span class="method-start">1970 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">teardown</span>
-                <span class="method-start">39247 ms</span>
+                <span class="method-start">2799 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">setup</span>
+                <span class="method-start">3265 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">testEtsySearch</span>
+                <span class="method-start">4801 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">teardown</span>
+                <span class="method-start">5624 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">setup</span>
+                <span class="method-start">6095 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">testEtsySearchResult</span>
+                <span class="method-start">7536 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">teardown</span>
+                <span class="method-start">9977 ms</span>
+              </div> <!-- configuration-method after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">scripts._02_TechGlobalTest</div> <!-- chronological-class-name -->
+              <div class="configuration-method before">
+                <span class="method-name">setup</span>
+                <span class="method-start">10426 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">testApplicationFormHeading</span>
+                <span class="method-start">11953 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">teardown</span>
+                <span class="method-start">42679 ms</span>
               </div> <!-- configuration-method after -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">scripts._01_AppleTest</div> <!-- chronological-class-name -->
               <div class="configuration-method before">
                 <span class="method-name">setup</span>
-                <span class="method-start">42392 ms</span>
+                <span class="method-start">43121 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <img src="failed.png">
                 </img>
                 <span class="method-name">X</span>
-                <span class="method-start">44834 ms</span>
+                <span class="method-start">44654 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">teardown</span>
-                <span class="method-start">44837 ms</span>
+                <span class="method-start">44655 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
                 <span class="method-name">setup</span>
-                <span class="method-start">47986 ms</span>
+                <span class="method-start">45087 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">testAppleTitle</span>
-                <span class="method-start">50117 ms</span>
+                <span class="method-start">46619 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">teardown</span>
-                <span class="method-start">53334 ms</span>
+                <span class="method-start">47475 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
-                <img src="failed.png">
-                </img>
                 <span class="method-name">setup</span>
-                <span class="method-start">56469 ms</span>
+                <span class="method-start">47888 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">testAppleURL</span>
-                <span class="method-start">58115 ms</span>
+                <span class="method-start">49317 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">teardown</span>
-                <span class="method-start">58115 ms</span>
+                <span class="method-start">50351 ms</span>
               </div> <!-- configuration-method after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->

@@ -13,13 +13,14 @@ public class _02_TechGlobalTest extends Base{
         driver.get("https://www.techglobalschool.com/");
 
 
-        WebElement heading1 = driver.findElement(By.cssSelector("#comp-kh9s3kyz3 span span"));
+     //REDUNDANT  WebElement heading1 = tgApplicationPage.heading1;
+
         // String expectedHeading = "Application Form";
         // String actualHeading = heading1.getText();
 
-        Assert.assertTrue(heading1.isDisplayed());
+        Assert.assertTrue(tgApplicationPage.heading1.isDisplayed());
 
-        Assert.assertEquals(heading1.getText(), "Application Form" );
+        Assert.assertEquals(tgApplicationPage.heading1.getText(), "Application Form" );
     }
 
 

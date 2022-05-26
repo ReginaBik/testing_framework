@@ -5,15 +5,14 @@
     <classes>
       <class name="scripts._02_TechGlobalTest">
         <methods>
-          <include name="teardown"/>
           <include name="setup"/>
+          <include name="teardown"/>
           <include name="testApplicationFormHeading"/>
         </methods>
       </class> <!-- scripts._02_TechGlobalTest -->
       <class name="scripts._01_AppleTest">
         <methods>
           <include name="setup"/>
-          <include name="testAppleURL"/>
           <include name="teardown"/>
           <include name="X"/>
         </methods>

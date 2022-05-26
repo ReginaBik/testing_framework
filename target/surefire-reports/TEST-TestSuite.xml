@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" ?>
-<testsuite tests="6" failures="3" name="TestSuite" time="45.913" errors="0" skipped="2">
+<testsuite tests="7" failures="2" name="TestSuite" time="36.716" errors="0" skipped="0">
   <properties>
     <property name="java.runtime.name" value="OpenJDK Runtime Environment"/>
     <property name="java.vm.version" value="18.0.1+0"/>
@@ -41,7 +41,7 @@
     <property name="java.class.path" value="/opt/homebrew/Cellar/maven/3.8.5/libexec/boot/plexus-classworlds-2.6.0.jar"/>
     <property name="java.vm.specification.version" value="18"/>
     <property name="sun.arch.data.model" value="64"/>
-    <property name="sun.java.command" value="org.codehaus.plexus.classworlds.launcher.Launcher test"/>
+    <property name="sun.java.command" value="org.codehaus.plexus.classworlds.launcher.Launcher clean test"/>
     <property name="java.home" value="/opt/homebrew/Cellar/openjdk/18.0.1/libexec/openjdk.jdk/Contents/Home"/>
     <property name="apple.awt.application.name" value="Launcher"/>
     <property name="user.language" value="en"/>
@@ -62,23 +62,24 @@
     <property name="socksNonProxyHosts" value="local|*.local|169.254/16|*.169.254/16"/>
     <property name="ftp.nonProxyHosts" value="local|*.local|169.254/16|*.169.254/16"/>
   </properties>
-  <testcase classname="scripts._02_TechGlobalTest" name="testApplicationFormHeading" time="34.699">
-    <failure message="no such element: Unable to locate element: {&quot;method&quot;:&quot;css selector&quot;,&quot;selector&quot;:&quot;#comp-kh9s3kyz3 span span&quot;}
-  (Session info: chrome=101.0.4951.64)
+  <testcase classname="scripts._03_EtsyTest" name="testEtsyLogo" time="0.831"/>
+  <testcase classname="scripts._03_EtsyTest" name="testEtsySearch" time="0.822"/>
+  <testcase classname="scripts._03_EtsyTest" name="testEtsySearchResult" time="2.44"/>
+  <testcase classname="scripts._02_TechGlobalTest" name="testApplicationFormHeading" time="30.731">
+    <failure message="Unable to locate element: #comp-kh9s3kyz3 span span
 For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
 Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
 System info: host: &apos;Reginas-MBP.local.tld&apos;, ip: &apos;fe80:0:0:0:4cc:ab87:dbe1:8173%en0&apos;, os.name: &apos;Mac OS X&apos;, os.arch: &apos;aarch64&apos;, os.version: &apos;12.2&apos;, java.version: &apos;18.0.1&apos;
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 101.0.4951.64, chrome: {chromedriverVersion: 101.0.4951.41 (93c720db8323..., userDataDir: /var/folders/52/qhwbj7gn7y7...}, goog:chromeOptions: {debuggerAddress: localhost:49833}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: MAC, platformName: MAC, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: db5a22c1e3a48e7f65231abc11b2abbd
-*** Element info: {Using=css selector, value=#comp-kh9s3kyz3 span span}" type="org.openqa.selenium.NoSuchElementException">org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;css selector&quot;,&quot;selector&quot;:&quot;#comp-kh9s3kyz3 span span&quot;}
-  (Session info: chrome=101.0.4951.64)
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 100.0.2, javascriptEnabled: true, moz:accessibilityChecks: false, moz:buildID: 20220519220738, moz:geckodriverVersion: 0.31.0, moz:headless: false, moz:processID: 20450, moz:profile: /var/folders/52/qhwbj7gn7y7..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platform: MAC, platformName: MAC, platformVersion: 21.3.0, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: 13ffdcb3-1edc-48ea-9f1c-3e5077cd9ddb
+*** Element info: {Using=css selector, value=#comp-kh9s3kyz3 span span}" type="org.openqa.selenium.NoSuchElementException">org.openqa.selenium.NoSuchElementException: Unable to locate element: #comp-kh9s3kyz3 span span
 For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
 Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
 System info: host: &apos;Reginas-MBP.local.tld&apos;, ip: &apos;fe80:0:0:0:4cc:ab87:dbe1:8173%en0&apos;, os.name: &apos;Mac OS X&apos;, os.arch: &apos;aarch64&apos;, os.version: &apos;12.2&apos;, java.version: &apos;18.0.1&apos;
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 101.0.4951.64, chrome: {chromedriverVersion: 101.0.4951.41 (93c720db8323..., userDataDir: /var/folders/52/qhwbj7gn7y7...}, goog:chromeOptions: {debuggerAddress: localhost:49833}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: MAC, platformName: MAC, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: db5a22c1e3a48e7f65231abc11b2abbd
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 100.0.2, javascriptEnabled: true, moz:accessibilityChecks: false, moz:buildID: 20220519220738, moz:geckodriverVersion: 0.31.0, moz:headless: false, moz:processID: 20450, moz:profile: /var/folders/52/qhwbj7gn7y7..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platform: MAC, platformName: MAC, platformVersion: 21.3.0, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: 13ffdcb3-1edc-48ea-9f1c-3e5077cd9ddb
 *** Element info: {Using=css selector, value=#comp-kh9s3kyz3 span span}
 	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:67)
 	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
@@ -93,124 +94,202 @@ Session ID: db5a22c1e3a48e7f65231abc11b2abbd
 	at org.openqa.selenium.remote.RemoteWebDriver.findElementByCssSelector(RemoteWebDriver.java:420)
 	at org.openqa.selenium.By$ByCssSelector.findElement(By.java:431)
 	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
-	at scripts._02_TechGlobalTest.testApplicationFormHeading(_02_TechGlobalTest.java:24)
+	at scripts._02_TechGlobalTest.testApplicationFormHeading(_02_TechGlobalTest.java:16)
 </failure>
-    <system-out>Configuring TestNG with: org.apache.maven.surefire.testng.conf.TestNG652Configurator@387c703b
-</system-out>
-    <system-err>SLF4J: Failed to load class &quot;org.slf4j.impl.StaticLoggerBinder&quot;.
-SLF4J: Defaulting to no-operation (NOP) logger implementation
-SLF4J: See http://www.slf4j.org/codes.html#StaticLoggerBinder for further details.
-Starting ChromeDriver 101.0.4951.41 (93c720db8323b3ec10d056025ab95c23a31997c9-refs/branch-heads/4951@{#904}) on port 1847
-Only local connections are allowed.
-Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
-ChromeDriver was started successfully.
-May 21, 2022 3:47:32 PM org.openqa.selenium.remote.ProtocolHandshake createSession
+    <system-err>1653253078295	Marionette	INFO	Stopped listening on port 60959
+1653253078749	geckodriver	INFO	Listening on 127.0.0.1:32979
+1653253078755	mozrunner::runner	INFO	Running command: &quot;/Applications/Firefox.app/Contents/MacOS/firefox-bin&quot; &quot;--marionette&quot; &quot;-foreground&quot; &quot;-no-remote&quot; &quot;-profile&quot; &quot;/var/folders/52/qhwbj7gn7y71h9lb75bf48700000gn/T/rust_mozprofile10qGhI&quot;
+2022-05-22 15:57:58.990 plugin-container[20451:1070259] nil host used in call to allowsSpecificHTTPSCertificateForHost
+2022-05-22 15:57:58.990 plugin-container[20451:1070259] nil host used in call to allowsAnyHTTPSCertificateForHost:
+1653253078993	Marionette	INFO	Marionette enabled
+2022-05-22 15:57:59.008 plugin-container[20451:1070259] nil host used in call to allowsSpecificHTTPSCertificateForHost
+2022-05-22 15:57:59.008 plugin-container[20451:1070259] nil host used in call to allowsAnyHTTPSCertificateForHost:
+2022-05-22 15:57:59.009 plugin-container[20451:1070264] nil host used in call to allowsSpecificHTTPSCertificateForHost
+2022-05-22 15:57:59.009 plugin-container[20451:1070264] nil host used in call to allowsAnyHTTPSCertificateForHost:
+UNSUPPORTED (log once): POSSIBLE ISSUE: unit 1 GLD_TEXTURE_INDEX_2D is unloadable and bound to sampler type (Float) - using zero texture because texture unloadable
+console.warn: SearchSettings: &quot;get: No settings file exists, new profile?&quot; (new NotFoundError(&quot;Could not open the file at /var/folders/52/qhwbj7gn7y71h9lb75bf48700000gn/T/rust_mozprofile10qGhI/search.json.mozlz4&quot;, (void 0)))
+console.error: BackgroundUpdate: 
+  _reasonsToNotScheduleUpdates: Failed to check for Maintenance Service Registry Key: [Exception... &quot;Component returned failure code: 0x80004001 (NS_ERROR_NOT_IMPLEMENTED) [nsIUpdateProcessor.getServiceRegKeyExists]&quot;  nsresult: &quot;0x80004001 (NS_ERROR_NOT_IMPLEMENTED)&quot;  location: &quot;JS frame :: resource://gre/modules/BackgroundUpdate.jsm :: _reasonsToNotScheduleUpdates :: line 241&quot;  data: no]
+1653253079729	Marionette	INFO	Listening on port 61164
+Read port: 61164
+1653253079802	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+May 22, 2022 3:57:59 PM org.openqa.selenium.remote.ProtocolHandshake createSession
 INFO: Detected dialect: W3C
 </system-err>
   </testcase>
-  <testcase classname="scripts._01_AppleTest" name="X" time="0.002">
+  <testcase classname="scripts._01_AppleTest" name="X" time="0.001">
     <failure message="Failure on purpose" type="java.lang.AssertionError">java.lang.AssertionError: Failure on purpose
 	at org.testng.Assert.fail(Assert.java:97)
-	at scripts._01_AppleTest.X(_01_AppleTest.java:51)
+	at scripts._01_AppleTest.X(_01_AppleTest.java:39)
 </failure>
-    <system-err>Starting ChromeDriver 101.0.4951.41 (93c720db8323b3ec10d056025ab95c23a31997c9-refs/branch-heads/4951@{#904}) on port 46721
-Only local connections are allowed.
-Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
-ChromeDriver was started successfully.
-May 21, 2022 3:48:13 PM org.openqa.selenium.remote.ProtocolHandshake createSession
+    <system-err>1653253110999	Marionette	INFO	Stopped listening on port 61164
+
+###!!! [Parent][PBackgroundParent] Error: Send(msgname=PMessagePort::Msg___delete__) Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Parent][PBackgroundParent] Error: RunMessage(msgname=PMessagePort::Msg_Close) Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Parent][PBackgroundParent] Error: RunMessage(msgname=PMessagePort::Msg_Close) Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Parent][PBackgroundParent] Error: RunMessage(msgname=PMessagePort::Msg_Close) Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Parent][PBackgroundParent] Error: RunMessage(msgname=PMessagePort::Msg_Close) Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Parent][PBackgroundParent] Error: RunMessage(msgname=PMessagePort::Msg_Close) Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Parent][PBackgroundParent] Error: RunMessage(msgname=PMessagePort::Msg_Close) Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Parent][PBackgroundParent] Error: RunMessage(msgname=PMessagePort::Msg_Close) Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Parent][PBackgroundParent] Error: RunMessage(msgname=PMessagePort::Msg_Close) Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Parent][PBackgroundParent] Error: RunMessage(msgname=PMessagePort::Msg_Close) Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Parent][PBackgroundParent] Error: RunMessage(msgname=PMessagePort::Msg_Close) Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Parent][PBackgroundParent] Error: RunMessage(msgname=PMessagePort::Msg_Close) Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Parent][PBackgroundParent] Error: RunMessage(msgname=PMessagePort::Msg_Close) Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Parent][PBackgroundParent] Error: RunMessage(msgname=PMessagePort::Msg_Close) Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Parent][PBackgroundParent] Error: RunMessage(msgname=PMessagePort::Msg_Close) Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Parent][PBackgroundParent] Error: RunMessage(msgname=PMessagePort::Msg_Close) Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Parent][PBackgroundParent] Error: RunMessage(msgname=PMessagePort::Msg_Close) Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Parent][PBackgroundParent] Error: RunMessage(msgname=PMessagePort::Msg_Close) Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Parent][PBackgroundParent] Error: RunMessage(msgname=PMessagePort::Msg_Close) Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Parent][PBackgroundParent] Error: RunMessage(msgname=PMessagePort::Msg_Close) Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Parent][PBackgroundParent] Error: RunMessage(msgname=PMessagePort::Msg_Close) Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Parent][PBackgroundParent] Error: RunMessage(msgname=PMessagePort::Msg_Close) Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Parent][PBackgroundParent] Error: RunMessage(msgname=PMessagePort::Msg_Close) Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Parent][PBackgroundParent] Error: RunMessage(msgname=PMessagePort::Msg_Close) Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Parent][PBackgroundParent] Error: RunMessage(msgname=PMessagePort::Msg_Close) Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Parent][PBackgroundParent] Error: RunMessage(msgname=PMessagePort::Msg_Close) Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Parent][PBackgroundParent] Error: RunMessage(msgname=PMessagePort::Msg_Close) Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Parent][PBackgroundParent] Error: RunMessage(msgname=PMessagePort::Msg_Close) Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Parent][PBackgroundParent] Error: RunMessage(msgname=PMessagePort::Msg_Close) Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Parent][PBackgroundParent] Error: RunMessage(msgname=PMessagePort::Msg_Close) Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Parent][PBackgroundParent] Error: RunMessage(msgname=PMessagePort::Msg_Close) Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Parent][PBackgroundParent] Error: RunMessage(msgname=PMessagePort::Msg_Close) Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Parent][PBackgroundParent] Error: RunMessage(msgname=PMessagePort::Msg_Close) Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Parent][PBackgroundParent] Error: RunMessage(msgname=PMessagePort::Msg_Close) Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Parent][PBackgroundParent] Error: RunMessage(msgname=PMessagePort::Msg_Close) Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Parent][PBackgroundParent] Error: RunMessage(msgname=PMessagePort::Msg_Close) Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Parent][PBackgroundParent] Error: RunMessage(msgname=PMessagePort::Msg_Close) Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Parent][PBackgroundParent] Error: RunMessage(msgname=PMessagePort::Msg_Close) Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Parent][PBackgroundParent] Error: RunMessage(msgname=PMessagePort::Msg_Close) Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Parent][PBackgroundParent] Error: RunMessage(msgname=PMessagePort::Msg_Close) Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Parent][PBackgroundParent] Error: RunMessage(msgname=PMessagePort::Msg_Close) Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Parent][PBackgroundParent] Error: RunMessage(msgname=PMessagePort::Msg_Close) Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Parent][PBackgroundParent] Error: RunMessage(msgname=PMessagePort::Msg_Close) Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Parent][PBackgroundParent] Error: RunMessage(msgname=PMessagePort::Msg_Close) Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Parent][PBackgroundParent] Error: RunMessage(msgname=PMessagePort::Msg_Close) Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Parent][PBackgroundParent] Error: RunMessage(msgname=PMessagePort::Msg_Close) Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Parent][PBackgroundParent] Error: RunMessage(msgname=PMessagePort::Msg_Close) Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Parent][PBackgroundParent] Error: RunMessage(msgname=PMessagePort::Msg_Close) Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Parent][PBackgroundParent] Error: RunMessage(msgname=PMessagePort::Msg_Close) Channel closing: too late to send/recv, messages will be lost
+
+1653253111447	geckodriver	INFO	Listening on 127.0.0.1:25306
+1653253111455	mozrunner::runner	INFO	Running command: &quot;/Applications/Firefox.app/Contents/MacOS/firefox-bin&quot; &quot;--marionette&quot; &quot;-foreground&quot; &quot;-no-remote&quot; &quot;-profile&quot; &quot;/var/folders/52/qhwbj7gn7y71h9lb75bf48700000gn/T/rust_mozprofilesuxhPh&quot;
+1653253111730	Marionette	INFO	Marionette enabled
+2022-05-22 15:58:31.730 plugin-container[20486:1071086] nil host used in call to allowsSpecificHTTPSCertificateForHost
+2022-05-22 15:58:31.731 plugin-container[20486:1071086] nil host used in call to allowsAnyHTTPSCertificateForHost:
+2022-05-22 15:58:31.747 plugin-container[20486:1071086] nil host used in call to allowsSpecificHTTPSCertificateForHost
+2022-05-22 15:58:31.747 plugin-container[20486:1071086] nil host used in call to allowsAnyHTTPSCertificateForHost:
+2022-05-22 15:58:31.748 plugin-container[20486:1071084] nil host used in call to allowsSpecificHTTPSCertificateForHost
+2022-05-22 15:58:31.748 plugin-container[20486:1071084] nil host used in call to allowsAnyHTTPSCertificateForHost:
+UNSUPPORTED (log once): POSSIBLE ISSUE: unit 1 GLD_TEXTURE_INDEX_2D is unloadable and bound to sampler type (Float) - using zero texture because texture unloadable
+console.warn: SearchSettings: &quot;get: No settings file exists, new profile?&quot; (new NotFoundError(&quot;Could not open the file at /var/folders/52/qhwbj7gn7y71h9lb75bf48700000gn/T/rust_mozprofilesuxhPh/search.json.mozlz4&quot;, (void 0)))
+console.error: BackgroundUpdate: 
+  _reasonsToNotScheduleUpdates: Failed to check for Maintenance Service Registry Key: [Exception... &quot;Component returned failure code: 0x80004001 (NS_ERROR_NOT_IMPLEMENTED) [nsIUpdateProcessor.getServiceRegKeyExists]&quot;  nsresult: &quot;0x80004001 (NS_ERROR_NOT_IMPLEMENTED)&quot;  location: &quot;JS frame :: resource://gre/modules/BackgroundUpdate.jsm :: _reasonsToNotScheduleUpdates :: line 241&quot;  data: no]
+1653253112437	Marionette	INFO	Listening on port 61806
+Read port: 61806
+1653253112505	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+May 22, 2022 3:58:32 PM org.openqa.selenium.remote.ProtocolHandshake createSession
 INFO: Detected dialect: W3C
 </system-err>
   </testcase>
-  <testcase classname="scripts._01_AppleTest" name="testAppleTitle" time="3.217"/>
-  <testcase classname="scripts._01_AppleTest" name="setup" time="7.995">
-    <failure message="unknown error: Chrome failed to start: crashed.
-  (chrome not reachable)
-  (The process started from chrome location /Applications/Google Chrome.app/Contents/MacOS/Google Chrome is no longer running, so ChromeDriver is assuming that Chrome has crashed.)
-Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
-System info: host: &apos;Reginas-MBP.local.tld&apos;, ip: &apos;fe80:0:0:0:4cc:ab87:dbe1:8173%en0&apos;, os.name: &apos;Mac OS X&apos;, os.arch: &apos;aarch64&apos;, os.version: &apos;12.2&apos;, java.version: &apos;18.0.1&apos;
-Driver info: driver.version: Driver
-remote stacktrace: 0   chromedriver                        0x00000001031452c9 chromedriver + 5120713
-1   chromedriver                        0x00000001030d3e33 chromedriver + 4656691
-2   chromedriver                        0x0000000102cc3158 chromedriver + 393560
-3   chromedriver                        0x0000000102ce59fe chromedriver + 535038
-4   chromedriver                        0x0000000102ce1446 chromedriver + 517190
-5   chromedriver                        0x0000000102d1b140 chromedriver + 753984
-6   chromedriver                        0x0000000102d15373 chromedriver + 729971
-7   chromedriver                        0x0000000102ceb609 chromedriver + 558601
-8   chromedriver                        0x0000000102cec635 chromedriver + 562741
-9   chromedriver                        0x0000000103117b1d chromedriver + 4934429
-10  chromedriver                        0x000000010311c295 chromedriver + 4952725
-11  chromedriver                        0x00000001031213cf chromedriver + 4973519
-12  chromedriver                        0x000000010311ccba chromedriver + 4955322
-13  chromedriver                        0x00000001030f737c chromedriver + 4801404
-14  chromedriver                        0x0000000103136c68 chromedriver + 5061736
-15  chromedriver                        0x0000000103136def chromedriver + 5062127
-16  chromedriver                        0x000000010314c5e5 chromedriver + 5150181
-17  libsystem_pthread.dylib             0x00007ff81dcb64f4 _pthread_start + 125
-18  libsystem_pthread.dylib             0x00007ff81dcb200f thread_start + 15
-" type="org.openqa.selenium.WebDriverException">org.openqa.selenium.WebDriverException: unknown error: Chrome failed to start: crashed.
-  (chrome not reachable)
-  (The process started from chrome location /Applications/Google Chrome.app/Contents/MacOS/Google Chrome is no longer running, so ChromeDriver is assuming that Chrome has crashed.)
-Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
-System info: host: &apos;Reginas-MBP.local.tld&apos;, ip: &apos;fe80:0:0:0:4cc:ab87:dbe1:8173%en0&apos;, os.name: &apos;Mac OS X&apos;, os.arch: &apos;aarch64&apos;, os.version: &apos;12.2&apos;, java.version: &apos;18.0.1&apos;
-Driver info: driver.version: Driver
-remote stacktrace: 0   chromedriver                        0x00000001031452c9 chromedriver + 5120713
-1   chromedriver                        0x00000001030d3e33 chromedriver + 4656691
-2   chromedriver                        0x0000000102cc3158 chromedriver + 393560
-3   chromedriver                        0x0000000102ce59fe chromedriver + 535038
-4   chromedriver                        0x0000000102ce1446 chromedriver + 517190
-5   chromedriver                        0x0000000102d1b140 chromedriver + 753984
-6   chromedriver                        0x0000000102d15373 chromedriver + 729971
-7   chromedriver                        0x0000000102ceb609 chromedriver + 558601
-8   chromedriver                        0x0000000102cec635 chromedriver + 562741
-9   chromedriver                        0x0000000103117b1d chromedriver + 4934429
-10  chromedriver                        0x000000010311c295 chromedriver + 4952725
-11  chromedriver                        0x00000001031213cf chromedriver + 4973519
-12  chromedriver                        0x000000010311ccba chromedriver + 4955322
-13  chromedriver                        0x00000001030f737c chromedriver + 4801404
-14  chromedriver                        0x0000000103136c68 chromedriver + 5061736
-15  chromedriver                        0x0000000103136def chromedriver + 5062127
-16  chromedriver                        0x000000010314c5e5 chromedriver + 5150181
-17  libsystem_pthread.dylib             0x00007ff81dcb64f4 _pthread_start + 125
-18  libsystem_pthread.dylib             0x00007ff81dcb200f thread_start + 15
-	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:67)
-	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
-	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:483)
-	at org.openqa.selenium.remote.W3CHandshakeResponse.lambda$errorHandler$0(W3CHandshakeResponse.java:62)
-	at org.openqa.selenium.remote.HandshakeResponse.lambda$getResponseFunction$0(HandshakeResponse.java:30)
-	at org.openqa.selenium.remote.ProtocolHandshake.lambda$createSession$0(ProtocolHandshake.java:126)
-	at java.base/java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:197)
-	at java.base/java.util.Spliterators$ArraySpliterator.tryAdvance(Spliterators.java:1002)
-	at java.base/java.util.stream.ReferencePipeline.forEachWithCancel(ReferencePipeline.java:129)
-	at java.base/java.util.stream.AbstractPipeline.copyIntoWithCancel(AbstractPipeline.java:527)
-	at java.base/java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:513)
-	at java.base/java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:499)
-	at java.base/java.util.stream.FindOps$FindOp.evaluateSequential(FindOps.java:150)
-	at java.base/java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234)
-	at java.base/java.util.stream.ReferencePipeline.findFirst(ReferencePipeline.java:647)
-	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:128)
-	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:74)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:136)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
-	at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:213)
-	at org.openqa.selenium.remote.RemoteWebDriver.&lt;init&gt;(RemoteWebDriver.java:131)
-	at org.openqa.selenium.chrome.ChromeDriver.&lt;init&gt;(ChromeDriver.java:181)
-	at org.openqa.selenium.chrome.ChromeDriver.&lt;init&gt;(ChromeDriver.java:168)
-	at org.openqa.selenium.chrome.ChromeDriver.&lt;init&gt;(ChromeDriver.java:123)
-	at utilities.Driver.getDriver(Driver.java:26)
-	at scripts._01_AppleTest.setup(_01_AppleTest.java:18)
-</failure>
-    <system-err>Starting ChromeDriver 101.0.4951.41 (93c720db8323b3ec10d056025ab95c23a31997c9-refs/branch-heads/4951@{#904}) on port 9251
-Only local connections are allowed.
-Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
-ChromeDriver was started successfully.
-</system-err>
-  </testcase>
-  <testcase classname="scripts._01_AppleTest" name="testAppleURL" time="0">
-    <skipped/>
-  </testcase>
-  <testcase classname="scripts._01_AppleTest" name="teardown" time="0">
-    <skipped/>
-  </testcase>
+  <testcase classname="scripts._01_AppleTest" name="testAppleTitle" time="0.857"/>
+  <testcase classname="scripts._01_AppleTest" name="testAppleURL" time="1.034"/>
 </testsuite>

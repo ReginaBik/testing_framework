@@ -1,16 +1,15 @@
 -------------------------------------------------------------------------------
 Test set: TestSuite
 -------------------------------------------------------------------------------
-Tests run: 6, Failures: 3, Errors: 0, Skipped: 2, Time elapsed: 58.369 sec <<< FAILURE!
-testApplicationFormHeading(scripts._02_TechGlobalTest)  Time elapsed: 34.699 sec  <<< FAILURE!
-org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"css selector","selector":"#comp-kh9s3kyz3 span span"}
-  (Session info: chrome=101.0.4951.64)
+Tests run: 7, Failures: 2, Errors: 0, Skipped: 0, Time elapsed: 50.946 sec <<< FAILURE!
+testApplicationFormHeading(scripts._02_TechGlobalTest)  Time elapsed: 30.731 sec  <<< FAILURE!
+org.openqa.selenium.NoSuchElementException: Unable to locate element: #comp-kh9s3kyz3 span span
 For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
 Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
 System info: host: 'Reginas-MBP.local.tld', ip: 'fe80:0:0:0:4cc:ab87:dbe1:8173%en0', os.name: 'Mac OS X', os.arch: 'aarch64', os.version: '12.2', java.version: '18.0.1'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 101.0.4951.64, chrome: {chromedriverVersion: 101.0.4951.41 (93c720db8323..., userDataDir: /var/folders/52/qhwbj7gn7y7...}, goog:chromeOptions: {debuggerAddress: localhost:49833}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: MAC, platformName: MAC, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: db5a22c1e3a48e7f65231abc11b2abbd
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 100.0.2, javascriptEnabled: true, moz:accessibilityChecks: false, moz:buildID: 20220519220738, moz:geckodriverVersion: 0.31.0, moz:headless: false, moz:processID: 20450, moz:profile: /var/folders/52/qhwbj7gn7y7..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platform: MAC, platformName: MAC, platformVersion: 21.3.0, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: 13ffdcb3-1edc-48ea-9f1c-3e5077cd9ddb
 *** Element info: {Using=css selector, value=#comp-kh9s3kyz3 span span}
 	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:67)
 	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
@@ -25,64 +24,10 @@ Session ID: db5a22c1e3a48e7f65231abc11b2abbd
 	at org.openqa.selenium.remote.RemoteWebDriver.findElementByCssSelector(RemoteWebDriver.java:420)
 	at org.openqa.selenium.By$ByCssSelector.findElement(By.java:431)
 	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
-	at scripts._02_TechGlobalTest.testApplicationFormHeading(_02_TechGlobalTest.java:24)
+	at scripts._02_TechGlobalTest.testApplicationFormHeading(_02_TechGlobalTest.java:16)
 
-X(scripts._01_AppleTest)  Time elapsed: 0.002 sec  <<< FAILURE!
+X(scripts._01_AppleTest)  Time elapsed: 0.001 sec  <<< FAILURE!
 java.lang.AssertionError: Failure on purpose
 	at org.testng.Assert.fail(Assert.java:97)
-	at scripts._01_AppleTest.X(_01_AppleTest.java:51)
-
-setup(scripts._01_AppleTest)  Time elapsed: 7.995 sec  <<< FAILURE!
-org.openqa.selenium.WebDriverException: unknown error: Chrome failed to start: crashed.
-  (chrome not reachable)
-  (The process started from chrome location /Applications/Google Chrome.app/Contents/MacOS/Google Chrome is no longer running, so ChromeDriver is assuming that Chrome has crashed.)
-Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
-System info: host: 'Reginas-MBP.local.tld', ip: 'fe80:0:0:0:4cc:ab87:dbe1:8173%en0', os.name: 'Mac OS X', os.arch: 'aarch64', os.version: '12.2', java.version: '18.0.1'
-Driver info: driver.version: Driver
-remote stacktrace: 0   chromedriver                        0x00000001031452c9 chromedriver + 5120713
-1   chromedriver                        0x00000001030d3e33 chromedriver + 4656691
-2   chromedriver                        0x0000000102cc3158 chromedriver + 393560
-3   chromedriver                        0x0000000102ce59fe chromedriver + 535038
-4   chromedriver                        0x0000000102ce1446 chromedriver + 517190
-5   chromedriver                        0x0000000102d1b140 chromedriver + 753984
-6   chromedriver                        0x0000000102d15373 chromedriver + 729971
-7   chromedriver                        0x0000000102ceb609 chromedriver + 558601
-8   chromedriver                        0x0000000102cec635 chromedriver + 562741
-9   chromedriver                        0x0000000103117b1d chromedriver + 4934429
-10  chromedriver                        0x000000010311c295 chromedriver + 4952725
-11  chromedriver                        0x00000001031213cf chromedriver + 4973519
-12  chromedriver                        0x000000010311ccba chromedriver + 4955322
-13  chromedriver                        0x00000001030f737c chromedriver + 4801404
-14  chromedriver                        0x0000000103136c68 chromedriver + 5061736
-15  chromedriver                        0x0000000103136def chromedriver + 5062127
-16  chromedriver                        0x000000010314c5e5 chromedriver + 5150181
-17  libsystem_pthread.dylib             0x00007ff81dcb64f4 _pthread_start + 125
-18  libsystem_pthread.dylib             0x00007ff81dcb200f thread_start + 15
-	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:67)
-	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
-	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:483)
-	at org.openqa.selenium.remote.W3CHandshakeResponse.lambda$errorHandler$0(W3CHandshakeResponse.java:62)
-	at org.openqa.selenium.remote.HandshakeResponse.lambda$getResponseFunction$0(HandshakeResponse.java:30)
-	at org.openqa.selenium.remote.ProtocolHandshake.lambda$createSession$0(ProtocolHandshake.java:126)
-	at java.base/java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:197)
-	at java.base/java.util.Spliterators$ArraySpliterator.tryAdvance(Spliterators.java:1002)
-	at java.base/java.util.stream.ReferencePipeline.forEachWithCancel(ReferencePipeline.java:129)
-	at java.base/java.util.stream.AbstractPipeline.copyIntoWithCancel(AbstractPipeline.java:527)
-	at java.base/java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:513)
-	at java.base/java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:499)
-	at java.base/java.util.stream.FindOps$FindOp.evaluateSequential(FindOps.java:150)
-	at java.base/java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234)
-	at java.base/java.util.stream.ReferencePipeline.findFirst(ReferencePipeline.java:647)
-	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:128)
-	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:74)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:136)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
-	at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:213)
-	at org.openqa.selenium.remote.RemoteWebDriver.<init>(RemoteWebDriver.java:131)
-	at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:181)
-	at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:168)
-	at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:123)
-	at utilities.Driver.getDriver(Driver.java:26)
-	at scripts._01_AppleTest.setup(_01_AppleTest.java:18)
+	at scripts._01_AppleTest.X(_01_AppleTest.java:39)
 
