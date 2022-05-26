@@ -70,23 +70,24 @@ public class _03_EtsyTest extends Base {
         // Assert.assertTrue(Integer.parseInt(resultTag.getText().substring(0, resultTag.getText().indexOf(" ")).replace(",", "")) > 0);
     }
 
-        @Test(priority = 4, description = "TC905: Validate Etsy main header")
-        public void testMainHeader() {
-            driver.get("https://www.etsy.com/");
+    @Test(priority = 4, description = "TC905: Validate Etsy main header")
+    public void testMainHeader() {
+        driver.get("https://www.etsy.com/");
 
-            String[] expectedTexts = {
-                    "Father's Day Gifts",
-                    "Jewelry & Accessories",
-                    "Clothing & Shoes",
-                    "Home & Living",
-                    "Wedding & Party",
-                    "Toys & Entertainment",
-                    "Art & Collectibles",
-                    "Craft Supplies",
-                    "Gifts & Gift Cards"};
+        String[] expectedTexts = {
+                "Father's Day Gifts",
+                "Jewelry & Accessories",
+                "Clothing & Shoes",
+                "Home & Living",
+                "Wedding & Party",
+                "Toys & Entertainment",
+                "Art & Collectibles",
+                "Craft Supplies",
+                "Gifts & Gift Cards"};
 
-
-
-
+        for (int i = 0; i < 9; i++) {
+            Assert.assertEquals(etsySearchPage.mainHeaderLinks.get(i).getText(), expectedTexts[i]);
         }
+
     }
+}
