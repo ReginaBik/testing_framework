@@ -22,7 +22,7 @@ public class _03_EtsyTest extends Base {
 
     // 2. Validation of test - test
     @Test(priority = 1)
-    public void testEtsyLogo(){
+    public void testEtsyLogo() {
         driver.get("https://www.etsy.com/");
 
         //Get logo web element from EtsyPage
@@ -38,7 +38,7 @@ public class _03_EtsyTest extends Base {
     testEtsySearch
      */
     @Test(priority = 3)
-    public void testEtsySearch(){
+    public void testEtsySearch() {
         driver.get("https://www.etsy.com/");
 
         //Get searchInputBox and searchButton web elements from EtsyPage
@@ -55,7 +55,7 @@ public class _03_EtsyTest extends Base {
     3. Validate the results are more than zero
      */
     @Test(priority = 2, dependsOnMethods = "testEtsySearch")
-    public void testEtsySearchResult(){
+    public void testEtsySearchResult() {
         driver.get("https://www.etsy.com/");
 
         //Get searchInputBox again from EtsySearchPage
@@ -69,4 +69,24 @@ public class _03_EtsyTest extends Base {
         Assert.assertTrue(Integer.parseInt(etsySearchPage.resultTag.getText().replaceAll("[^0-9]", "")) > 0);
         // Assert.assertTrue(Integer.parseInt(resultTag.getText().substring(0, resultTag.getText().indexOf(" ")).replace(",", "")) > 0);
     }
-}
+
+        @Test(priority = 4, description = "TC905: Validate Etsy main header")
+        public void testMainHeader() {
+            driver.get("https://www.etsy.com/");
+
+            String[] expectedTexts = {
+                    "Father's Day Gifts",
+                    "Jewelry & Accessories",
+                    "Clothing & Shoes",
+                    "Home & Living",
+                    "Wedding & Party",
+                    "Toys & Entertainment",
+                    "Art & Collectibles",
+                    "Craft Supplies",
+                    "Gifts & Gift Cards"};
+
+
+
+
+        }
+    }

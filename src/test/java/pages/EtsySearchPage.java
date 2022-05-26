@@ -24,4 +24,7 @@ public class EtsySearchPage {
 
     @FindBy(css = ".wt-display-inline-flex-sm>span")
     public WebElement resultTag;
+
+    @FindBy(css = "ul[data-ui='top-nav-category-list'] span")
+    public WebElement mainHeaderLinks;
 }
