@@ -15,4 +15,9 @@ public class GoogleSearchResultPage {
 
     @FindBy(id = "result-stats")
     public WebElement resultTag;
+
+    @FindBy(linkText = "Store")
+    public WebElement storeLink;
+
+
 }
