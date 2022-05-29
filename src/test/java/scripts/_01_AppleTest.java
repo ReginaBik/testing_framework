@@ -33,11 +33,11 @@ public class _01_AppleTest extends Base {
         Assert.assertEquals(actualURL, expectedURL);
     }
 
-    @Test
+  /*  @Test
     public void X(){
         //fail() method is used to fail a test on purpose
         Assert.fail("Failure on purpose");
-    }
+    }*/
 
 /* public static void main(String[] args) {
         // 1. Initial set up - before each test

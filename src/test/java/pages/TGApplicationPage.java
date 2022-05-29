@@ -11,8 +11,9 @@ public class TGApplicationPage {
         PageFactory.initElements(driver, this);
     }
 
-    @FindBy(xpath = "//div[@id='comp-kh9s3kyz3/']/span/span")
+    @FindBy(xpath = "//div[@id='comp-kh9s3kyz3']//span/span")
     public WebElement heading1;
 
 
 }
+
