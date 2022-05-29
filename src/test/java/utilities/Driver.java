@@ -20,7 +20,7 @@ public class Driver {
         if(driver == null) { // means if there is no driver object, create one
             // System.setProperty("webdriver.chrome.driver", "chromedriver"); here downloading chromedriver,...
 
-            String browser = "firefox"; //define which browser you will run your test in
+            String browser = "chrome"; //define which browser you will run your test in
             switch(browser){
                 case "chrome":
                     WebDriverManager.chromedriver().setup();

@@ -1,33 +1,8 @@
 -------------------------------------------------------------------------------
 Test set: TestSuite
 -------------------------------------------------------------------------------
-Tests run: 7, Failures: 2, Errors: 0, Skipped: 0, Time elapsed: 50.946 sec <<< FAILURE!
-testApplicationFormHeading(scripts._02_TechGlobalTest)  Time elapsed: 30.731 sec  <<< FAILURE!
-org.openqa.selenium.NoSuchElementException: Unable to locate element: #comp-kh9s3kyz3 span span
-For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
-Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
-System info: host: 'Reginas-MBP.local.tld', ip: 'fe80:0:0:0:4cc:ab87:dbe1:8173%en0', os.name: 'Mac OS X', os.arch: 'aarch64', os.version: '12.2', java.version: '18.0.1'
-Driver info: org.openqa.selenium.firefox.FirefoxDriver
-Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 100.0.2, javascriptEnabled: true, moz:accessibilityChecks: false, moz:buildID: 20220519220738, moz:geckodriverVersion: 0.31.0, moz:headless: false, moz:processID: 20450, moz:profile: /var/folders/52/qhwbj7gn7y7..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platform: MAC, platformName: MAC, platformVersion: 21.3.0, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
-Session ID: 13ffdcb3-1edc-48ea-9f1c-3e5077cd9ddb
-*** Element info: {Using=css selector, value=#comp-kh9s3kyz3 span span}
-	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:67)
-	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
-	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:483)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElementByCssSelector(RemoteWebDriver.java:420)
-	at org.openqa.selenium.By$ByCssSelector.findElement(By.java:431)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
-	at scripts._02_TechGlobalTest.testApplicationFormHeading(_02_TechGlobalTest.java:16)
-
-X(scripts._01_AppleTest)  Time elapsed: 0.001 sec  <<< FAILURE!
-java.lang.AssertionError: Failure on purpose
-	at org.testng.Assert.fail(Assert.java:97)
-	at scripts._01_AppleTest.X(_01_AppleTest.java:39)
+Tests run: 6, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 19.8 sec <<< FAILURE! - in TestSuite
+testGoogleStoreLink(scripts._04_GoogleSearchTest)  Time elapsed: 0.859 sec  <<< FAILURE!
+java.lang.NullPointerException: Cannot invoke "org.openqa.selenium.WebElement.isDisplayed()" because "element" is null
+	at scripts._04_GoogleSearchTest.testGoogleStoreLink(_04_GoogleSearchTest.java:34)
 

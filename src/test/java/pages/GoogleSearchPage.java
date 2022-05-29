@@ -8,7 +8,6 @@ import org.w3c.dom.html.HTMLInputElement;
 
 public class GoogleSearchPage {
 
-    public HTMLInputElement storeLink;
 
     public GoogleSearchPage(WebDriver driver){
         PageFactory.initElements(driver, this);
@@ -16,5 +15,8 @@ public class GoogleSearchPage {
 
     @FindBy(name = "q")
     public WebElement searchInputBox;
+
+    @FindBy(linkText = "Store")
+    public WebElement storeLink;
 }
 

@@ -3,20 +3,27 @@
 <suite name="Failed suite [Command line suite]" verbose="0">
   <test thread-count="5" name="Command line test(failed)" verbose="0">
     <classes>
-      <class name="scripts._02_TechGlobalTest">
+      <class name="scripts._07_DropDownTest">
         <methods>
           <include name="setup"/>
           <include name="teardown"/>
-          <include name="testApplicationFormHeading"/>
+          <include name="testExpediaDropdown"/>
         </methods>
-      </class> <!-- scripts._02_TechGlobalTest -->
-      <class name="scripts._01_AppleTest">
+      </class> <!-- scripts._07_DropDownTest -->
+      <class name="scripts._04_GoogleSearchTest">
         <methods>
           <include name="setup"/>
           <include name="teardown"/>
-          <include name="X"/>
+          <include name="testGoogleStoreLink"/>
         </methods>
-      </class> <!-- scripts._01_AppleTest -->
+      </class> <!-- scripts._04_GoogleSearchTest -->
+      <class name="scripts._03_EtsyTest">
+        <methods>
+          <include name="setup"/>
+          <include name="teardown"/>
+          <include name="testMainHeader"/>
+        </methods>
+      </class> <!-- scripts._03_EtsyTest -->
     </classes>
   </test> <!-- Command line test(failed) -->
 </suite> <!-- Failed suite [Command line suite] -->

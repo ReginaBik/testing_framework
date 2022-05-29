@@ -8,40 +8,25 @@
 <body>
 <table>
 <tr><th>Test</th><th># Passed</th><th># Skipped</th><th># Retried</th><th># Failed</th><th>Time (ms)</th><th>Included Groups</th><th>Excluded Groups</th></tr>
-<tr><th colspan="8">Command line suite</th></tr>
-<tr><td><a href="#t0">Command line test</a></td><td class="num">5</td><td class="num">0</td><td class="num">0</td><td class="num attn">2</td><td class="num">50,787</td><td></td><td></td></tr>
+<tr><th colspan="8">Smoke</th></tr>
+<tr><td><a href="#t0">Critical Functionalities</a></td><td class="num">5</td><td class="num">0</td><td class="num">0</td><td class="num attn">1</td><td class="num">19,552</td><td></td><td></td></tr>
 </table>
-<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">Command line suite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">Command line test &#8212; failed</th></tr><tr class="failedeven"><td rowspan="1">scripts._01_AppleTest</td><td><a href="#m0">X</a></td><td rowspan="1">1653253112966</td><td rowspan="1">0</td></tr><tr class="failedodd"><td rowspan="1">scripts._02_TechGlobalTest</td><td><a href="#m1">testApplicationFormHeading</a></td><td rowspan="1">1653253080265</td><td rowspan="1">30723</td></tr><tr><th colspan="4">Command line test &#8212; passed</th></tr><tr class="passedeven"><td rowspan="2">scripts._01_AppleTest</td><td><a href="#m2">testAppleTitle</a></td><td rowspan="1">1653253114931</td><td rowspan="1">856</td></tr><tr class="passedeven"><td><a href="#m3">testAppleURL</a></td><td rowspan="1">1653253117629</td><td rowspan="1">1033</td></tr><tr class="passedodd"><td rowspan="3">scripts._03_EtsyTest</td><td><a href="#m4">testEtsyLogo</a></td><td rowspan="1">1653253070282</td><td rowspan="1">826</td></tr><tr class="passedodd"><td><a href="#m5">testEtsySearch</a></td><td rowspan="1">1653253073113</td><td rowspan="1">822</td></tr><tr class="passedodd"><td><a href="#m6">testEtsySearchResult</a></td><td rowspan="1">1653253075848</td><td rowspan="1">2440</td></tr></tbody>
+<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">Smoke</th></tr></tbody><tbody id="t0"><tr><th colspan="4">Critical Functionalities &#8212; failed</th></tr><tr class="failedeven"><td rowspan="1">scripts._04_GoogleSearchTest</td><td><a href="#m0">testGoogleStoreLink</a></td><td rowspan="1">1653858902587</td><td rowspan="1">853</td></tr><tr><th colspan="4">Critical Functionalities &#8212; passed</th></tr><tr class="passedeven"><td rowspan="1">scripts._01_AppleTest</td><td><a href="#m1">testAppleTitle</a></td><td rowspan="1">1653858898325</td><td rowspan="1">829</td></tr><tr class="passedodd"><td rowspan="1">scripts._02_TechGlobalTest</td><td><a href="#m2">testApplicationFormHeading</a></td><td rowspan="1">1653858900490</td><td rowspan="1">763</td></tr><tr class="passedeven"><td rowspan="3">scripts._03_EtsyTest</td><td><a href="#m3">testEtsyLogo</a></td><td rowspan="1">1653858904561</td><td rowspan="1">1825</td></tr><tr class="passedeven"><td><a href="#m4">testEtsySearch</a></td><td rowspan="1">1653858907573</td><td rowspan="1">1720</td></tr><tr class="passedeven"><td><a href="#m5">testEtsySearchResult</a></td><td rowspan="1">1653858910427</td><td rowspan="1">3918</td></tr></tbody>
 </table>
-<h2>Command line test</h2><h3 id="m0">scripts._01_AppleTest#X</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.AssertionError: Failure on purpose
-	at scripts._01_AppleTest.X(_01_AppleTest.java:39)
+<h2>Critical Functionalities</h2><h3 id="m0">scripts._04_GoogleSearchTest#testGoogleStoreLink</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.NullPointerException: Cannot invoke &quot;org.openqa.selenium.WebElement.isDisplayed()&quot; because &quot;element&quot; is null
+	at org.openqa.selenium.support.ui.ExpectedConditions.elementIfVisible(ExpectedConditions.java:314)
+	at org.openqa.selenium.support.ui.ExpectedConditions.access$000(ExpectedConditions.java:43)
+	at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:300)
+	at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:297)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:249)
+	at utilities.Waiter.waitForVisibilityOfElement(Waiter.java:19)
+	at scripts._04_GoogleSearchTest.testGoogleStoreLink(_04_GoogleSearchTest.java:34)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-... Removed 34 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m1">scripts._02_TechGlobalTest#testApplicationFormHeading</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">org.openqa.selenium.NoSuchElementException: Unable to locate element: #comp-kh9s3kyz3 span span
-For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
-Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
-System info: host: &apos;Reginas-MBP.local.tld&apos;, ip: &apos;fe80:0:0:0:4cc:ab87:dbe1:8173%en0&apos;, os.name: &apos;Mac OS X&apos;, os.arch: &apos;aarch64&apos;, os.version: &apos;12.2&apos;, java.version: &apos;18.0.1&apos;
-Driver info: org.openqa.selenium.firefox.FirefoxDriver
-Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 100.0.2, javascriptEnabled: true, moz:accessibilityChecks: false, moz:buildID: 20220519220738, moz:geckodriverVersion: 0.31.0, moz:headless: false, moz:processID: 20450, moz:profile: /var/folders/52/qhwbj7gn7y7..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platform: MAC, platformName: MAC, platformVersion: 21.3.0, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
-Session ID: 13ffdcb3-1edc-48ea-9f1c-3e5077cd9ddb
-*** Element info: {Using=css selector, value=#comp-kh9s3kyz3 span span}
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElementByCssSelector(RemoteWebDriver.java:420)
-	at org.openqa.selenium.By$ByCssSelector.findElement(By.java:431)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
-	at scripts._02_TechGlobalTest.testApplicationFormHeading(_02_TechGlobalTest.java:16)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-... Removed 36 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m2">scripts._01_AppleTest#testAppleTitle</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m3">scripts._01_AppleTest#testAppleURL</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m4">scripts._03_EtsyTest#testEtsyLogo</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m5">scripts._03_EtsyTest#testEtsySearch</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m6">scripts._03_EtsyTest#testEtsySearchResult</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+... Removed 28 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m1">scripts._01_AppleTest#testAppleTitle</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m2">scripts._02_TechGlobalTest#testApplicationFormHeading</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m3">scripts._03_EtsyTest#testEtsyLogo</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m4">scripts._03_EtsyTest#testEtsySearch</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m5">scripts._03_EtsyTest#testEtsySearchResult</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
 </body>
 </html>

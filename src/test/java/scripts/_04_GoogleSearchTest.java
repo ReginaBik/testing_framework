@@ -31,7 +31,7 @@ public class _04_GoogleSearchTest extends Base {
         driver.get("https://www.google.com/");
 
         //explicitWait.until(ExpectedConditions.visibilityOf(googleSearchPage.storeLink)); // 120 attempts
-        Waiter.waitForVisibilityOfElement(driver, (WebElement) googleSearchPage.storeLink, 30);
+        Waiter.waitForVisibilityOfElement(driver, googleSearchPage.storeLink, 30);
         googleSearchPage.storeLink.click();//
 
         //Throws exception - Use explicit wait to prevent
