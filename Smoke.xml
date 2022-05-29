@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="smoke">
+<test name="Critical Functionalities">
+    <classes>
+        <class name="scripts._01_AppleTest">
+            <methods> 
+            <include name="testAppleTitle">
+            </include>
+            </methods>
+        </class>
+        
+        <class name="scripts._02_TechGlobalTest"/>
+        <class name="scripts._04_GoogleSearchTest">
+            <methods>
+                <include name="testGoogleSearch">
+                    
+                </include>
+            </methods>
+        </class>
+        <class name="scripts._03_EtsyTest">
+            <methods>
+                <exclude name="testMainHeader"/>
+            </methods>
+        </class>
+    </classes>
+</test>
+</suite>
