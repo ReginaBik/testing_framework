@@ -25,6 +25,7 @@ public class _03_Soft_vs_Hard_Assertions {
         softAssert.assertTrue(false, "========Failure");
 
         System.out.println("Hello world");
+        softAssert.assertAll();
     }
 
 

@@ -20,9 +20,9 @@ Select "Male" radio button and and validate "Male" is selected and "Female" is d
         facebookPage.registerLink.click();
         Waiter.pause(2);
         for(WebElement element : facebookPage.genderRadioButtons){
-            Assert.assertTrue(element.isDisplayed());
-            Assert.assertTrue(element.isEnabled());
-            Assert.assertFalse(element.isSelected());
+            softAssert.assertTrue(element.isDisplayed());
+            softAssert.assertTrue(element.isEnabled());
+            softAssert.assertFalse(element.isSelected());
         }
         facebookPage.genderRadioButtons.get(0).click();
         Waiter.pause(1);
