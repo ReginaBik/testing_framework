@@ -1,8 +1,16 @@
 -------------------------------------------------------------------------------
 Test set: TestSuite
 -------------------------------------------------------------------------------
-Tests run: 6, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 19.8 sec <<< FAILURE! - in TestSuite
-testGoogleStoreLink(scripts._04_GoogleSearchTest)  Time elapsed: 0.859 sec  <<< FAILURE!
-java.lang.NullPointerException: Cannot invoke "org.openqa.selenium.WebElement.isDisplayed()" because "element" is null
-	at scripts._04_GoogleSearchTest.testGoogleStoreLink(_04_GoogleSearchTest.java:34)
+Tests run: 8, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 70.909 sec <<< FAILURE! - in TestSuite
+testExpediaDropdown(scripts._07_DropDownTest)  Time elapsed: 32.194 sec  <<< FAILURE!
+org.openqa.selenium.StaleElementReferenceException: 
+stale element reference: element is not attached to the page document
+  (Session info: chrome=102.0.5005.61)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/stale_element_reference.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'Reginas-MBP.local.tld', ip: 'fe80:0:0:0:80d:8cd7:11b5:24ef%en0', os.name: 'Mac OS X', os.arch: 'aarch64', os.version: '12.2', java.version: '18.0.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 102.0.5005.61, chrome: {chromedriverVersion: 102.0.5005.61 (0e59bcc00cc4..., userDataDir: /var/folders/52/qhwbj7gn7y7...}, goog:chromeOptions: {debuggerAddress: localhost:57033}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: MAC, platformName: MAC, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 2a64837859cd2d0c347f7b1c1801dbb8
+	at scripts._07_DropDownTest.testExpediaDropdown(_07_DropDownTest.java:78)
 

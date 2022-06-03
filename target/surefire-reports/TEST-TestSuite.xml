@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" name="TestSuite" time="19.8" tests="6" errors="0" skipped="0" failures="1">
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" name="TestSuite" time="70.909" tests="8" errors="0" skipped="0" failures="1">
   <properties>
     <property name="java.runtime.name" value="OpenJDK Runtime Environment"/>
     <property name="java.vm.version" value="18.0.1+0"/>
@@ -40,7 +40,7 @@
     <property name="java.class.path" value="/opt/homebrew/Cellar/maven/3.8.5/libexec/boot/plexus-classworlds-2.6.0.jar"/>
     <property name="java.vm.specification.version" value="18"/>
     <property name="sun.arch.data.model" value="64"/>
-    <property name="sun.java.command" value="org.codehaus.plexus.classworlds.launcher.Launcher test -PSmoke"/>
+    <property name="sun.java.command" value="org.codehaus.plexus.classworlds.launcher.Launcher test -PRegression"/>
     <property name="java.home" value="/opt/homebrew/Cellar/openjdk/18.0.1/libexec/openjdk.jdk/Contents/Home"/>
     <property name="apple.awt.application.name" value="Launcher"/>
     <property name="user.language" value="en"/>
@@ -61,21 +61,31 @@
     <property name="socksNonProxyHosts" value="local|*.local|169.254/16|*.169.254/16"/>
     <property name="ftp.nonProxyHosts" value="local|*.local|169.254/16|*.169.254/16"/>
   </properties>
-  <testcase name="testAppleTitle" classname="scripts._01_AppleTest" time="0.829"/>
-  <testcase name="testApplicationFormHeading" classname="scripts._02_TechGlobalTest" time="0.764"/>
-  <testcase name="testGoogleStoreLink" classname="scripts._04_GoogleSearchTest" time="0.859">
-    <failure message="Cannot invoke &quot;org.openqa.selenium.WebElement.isDisplayed()&quot; because &quot;element&quot; is null" type="java.lang.NullPointerException">java.lang.NullPointerException: Cannot invoke "org.openqa.selenium.WebElement.isDisplayed()" because "element" is null
-	at scripts._04_GoogleSearchTest.testGoogleStoreLink(_04_GoogleSearchTest.java:34)
+  <testcase name="testAppleURL" classname="scripts._01_AppleTest" time="0.763"/>
+  <testcase name="testMainHeader" classname="scripts._03_EtsyTest" time="2.562"/>
+  <testcase name="testGoogleSearch" classname="scripts._04_GoogleSearchTest" time="3.704"/>
+  <testcase name="testCheckBoxInHeroApp" classname="scripts._05_CheckBoxTest" time="9.168"/>
+  <testcase name="TestFacebookGenderRadioButtons" classname="scripts._06_RadioButtonTest" time="7.429"/>
+  <testcase name="testUnsecurePasswordMessage" classname="scripts._07_DropDownTest" time="4.968"/>
+  <testcase name="testExpediaDropdown" classname="scripts._07_DropDownTest" time="32.194">
+    <failure message="stale element reference: element is not attached to the page document&#10;  (Session info: chrome=102.0.5005.61)&#10;For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/stale_element_reference.html&#10;Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;&#10;System info: host: &apos;Reginas-MBP.local.tld&apos;, ip: &apos;fe80:0:0:0:80d:8cd7:11b5:24ef%en0&apos;, os.name: &apos;Mac OS X&apos;, os.arch: &apos;aarch64&apos;, os.version: &apos;12.2&apos;, java.version: &apos;18.0.1&apos;&#10;Driver info: org.openqa.selenium.chrome.ChromeDriver&#10;Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 102.0.5005.61, chrome: {chromedriverVersion: 102.0.5005.61 (0e59bcc00cc4..., userDataDir: /var/folders/52/qhwbj7gn7y7...}, goog:chromeOptions: {debuggerAddress: localhost:57033}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: MAC, platformName: MAC, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}&#10;Session ID: 2a64837859cd2d0c347f7b1c1801dbb8" type="org.openqa.selenium.StaleElementReferenceException">org.openqa.selenium.StaleElementReferenceException: 
+stale element reference: element is not attached to the page document
+  (Session info: chrome=102.0.5005.61)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/stale_element_reference.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'Reginas-MBP.local.tld', ip: 'fe80:0:0:0:80d:8cd7:11b5:24ef%en0', os.name: 'Mac OS X', os.arch: 'aarch64', os.version: '12.2', java.version: '18.0.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 102.0.5005.61, chrome: {chromedriverVersion: 102.0.5005.61 (0e59bcc00cc4..., userDataDir: /var/folders/52/qhwbj7gn7y7...}, goog:chromeOptions: {debuggerAddress: localhost:57033}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: MAC, platformName: MAC, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 2a64837859cd2d0c347f7b1c1801dbb8
+	at scripts._07_DropDownTest.testExpediaDropdown(_07_DropDownTest.java:78)
 </failure>
-    <system-err><![CDATA[Starting ChromeDriver 101.0.4951.41 (93c720db8323b3ec10d056025ab95c23a31997c9-refs/branch-heads/4951@{#904}) on port 13787
+    <system-err><![CDATA[Starting ChromeDriver 102.0.5005.61 (0e59bcc00cc4985ce39ad31c150065f159d95ad3-refs/branch-heads/5005@{#819}) on port 38231
 Only local connections are allowed.
 Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
 ChromeDriver was started successfully.
-May 29, 2022 4:15:02 PM org.openqa.selenium.remote.ProtocolHandshake createSession
+Jun 02, 2022 7:37:13 PM org.openqa.selenium.remote.ProtocolHandshake createSession
 INFO: Detected dialect: W3C
 ]]></system-err>
   </testcase>
-  <testcase name="testEtsyLogo" classname="scripts._03_EtsyTest" time="1.825"/>
-  <testcase name="testEtsySearch" classname="scripts._03_EtsyTest" time="1.721"/>
-  <testcase name="testEtsySearchResult" classname="scripts._03_EtsyTest" time="3.918"/>
+  <testcase name="testEbayDropdown" classname="scripts._07_DropDownTest" time="0"/>
 </testsuite>
