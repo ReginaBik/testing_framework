@@ -29,8 +29,9 @@ public class ExpediaPage  {
     @FindBy(id = "preferred-class-input-trigger")
     public WebElement flightTypesDropdown;
 
+
     @FindBy(css = "#preferred-class-input>div a")
-    public List<WebElement> flightOptions;
+  public List<WebElement> flightOptions;
 
 
 
