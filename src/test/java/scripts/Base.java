@@ -25,6 +25,8 @@ public class Base {
     FacebookPage facebookPage;
     ExpediaPage expediaPage;
     EbayPage ebayPage;
+    HMPage hmPage;
+    TicketMasterPage ticketMasterPage;
 
     @BeforeMethod
     public void setup(){
@@ -40,6 +42,8 @@ public class Base {
         facebookPage = new FacebookPage(driver);
         expediaPage = new ExpediaPage(driver);
         ebayPage =new EbayPage(driver);
+        hmPage = new HMPage(driver);
+        ticketMasterPage = new TicketMasterPage(driver);
     }
 
     @AfterMethod
