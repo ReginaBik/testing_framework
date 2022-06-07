@@ -18,6 +18,15 @@ public class EtsySearchPage {
     @FindBy(id = "global-enhancements-search-query")
     public WebElement searchInputBox;
 
+    @FindBy(css = ".signin-header-action")
+    public WebElement signInButton;
+
+    @FindBy(css = ".wt-overlay--animation-done")
+    public WebElement signInModal;
+
+    @FindBy(id = "join-neu-overlay-title")
+    public WebElement signInModalHeading;
+
     @FindBy(css = "button[data-id='gnav-search-submit-button']")
     public WebElement searchButton;
 
