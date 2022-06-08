@@ -4,17 +4,14 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
+import org.testng.annotations.Test;
 
-public class TGApplicationPage {
-
-    public TGApplicationPage(WebDriver driver){
+public class TechGlobalSchoolHomePage {
+    public TechGlobalSchoolHomePage(WebDriver driver){
         PageFactory.initElements(driver, this);
     }
 
-    @FindBy(xpath = "//div[@id='comp-kh9s3kyz3']//span/span")
-    public WebElement heading1;
 
-
-
+    @FindBy(id = "dataItem-kuiqff9g-comp-kixnxkbc")
+    public WebElement faceBookIcon;
 }
-

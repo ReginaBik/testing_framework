@@ -27,6 +27,9 @@ public class Base {
     EbayPage ebayPage;
     HMPage hmPage;
     TicketMasterPage ticketMasterPage;
+    RediffHomePage rediffHomePage;
+    AmazonHomePage amazonHomePage;
+    TechGlobalSchoolHomePage techGlobalSchoolHomePage;
 
     @BeforeMethod
     public void setup(){
@@ -44,6 +47,9 @@ public class Base {
         ebayPage =new EbayPage(driver);
         hmPage = new HMPage(driver);
         ticketMasterPage = new TicketMasterPage(driver);
+        rediffHomePage = new RediffHomePage(driver);
+        amazonHomePage = new AmazonHomePage(driver);
+        techGlobalSchoolHomePage = new TechGlobalSchoolHomePage(driver);
     }
 
     @AfterMethod
