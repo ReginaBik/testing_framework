@@ -29,7 +29,7 @@ public class Base {
     TicketMasterPage ticketMasterPage;
     RediffHomePage rediffHomePage;
     AmazonHomePage amazonHomePage;
-    TechGlobalSchoolHomePage techGlobalSchoolHomePage;
+    TGHomePage tgHomePage;
 
     @BeforeMethod
     public void setup(){
@@ -49,7 +49,7 @@ public class Base {
         ticketMasterPage = new TicketMasterPage(driver);
         rediffHomePage = new RediffHomePage(driver);
         amazonHomePage = new AmazonHomePage(driver);
-        techGlobalSchoolHomePage = new TechGlobalSchoolHomePage(driver);
+        tgHomePage = new TGHomePage(driver);
     }
 
     @AfterMethod
