@@ -48,8 +48,10 @@ public class Driver {
                 default:
                     throw new NotFoundException("Browser IS NOT DEFINED properly!!!");
             }
-            driver.manage().window().maximize();
-            driver.manage().timeouts().implicitlyWait(Long.parseLong(ConfigReader.getProperty("implicitWait")), TimeUnit.SECONDS);
+            if(!ConfigReader.getProperty("browser").equals("headless")){
+                driver.manage().window().maximize();
+                driver.manage().timeouts().implicitlyWait(Long.parseLong(ConfigReader.getProperty("implicitWait")), TimeUnit.SECONDS);
+            }
         }
         return driver;
     }
