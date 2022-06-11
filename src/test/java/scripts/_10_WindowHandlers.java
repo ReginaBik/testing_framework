@@ -34,21 +34,7 @@ public class _10_WindowHandlers extends Base {
         System.out.println(driver.getTitle());
         System.out.println(driver.getCurrentUrl());
     }
-/*
-    @Test(priority = 1, description = " TEST CASE 1: Validate FaceBook social media icon for TechGlobal School")
-    public void testTechGlobalSchoolFaceBookIcon(){
-        driver.get("https://www.techglobalschool.com/");
 
-        String tgHomeWindowHandle = driver.getWindowHandle(); // Unique id
-        tgHomePage.faceBookIcon.click();
-
-        //2 tabs
-        for(String windowHandle : driver.getWindowHandles()){
-            if(!windowHandle.equals(tgHomeWindowHandle)) driver.switchTo().window(windowHandle);
-        }
-
-        softAssert.assertEquals(driver.getCurrentUrl(), "https://www.facebook.com/techglobalschool");
-    }*/
 
     /*
   TEST CASE 2: Multiple Windows .
