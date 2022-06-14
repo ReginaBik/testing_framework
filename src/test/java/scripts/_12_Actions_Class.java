@@ -173,6 +173,35 @@ public class _12_Actions_Class extends Base {
         Waiter.pause(2);
     }
 
+    /*
+    Go to https://www.etsy.com/
+    Hover over on "Jewelry & Accessories" menu item
+    Validate below categories are displayed with their expected texts
+    Accessories
+    Bags & Purses
+    Necklaces
+    Rings
+    Earrings
+    Bracelets
+    Body Jewelry
+    All Jewelry
+     */
+
+    @Test(priority = 8, description = "Etsy | test")
+    public void etsyTest(){
+        driver.get("https://www.etsy.com/");
+        actions.moveToElement(etsySearchPage.mainHeaderLinks.get(1)).perform();
+        Waiter.pause(10);
+        String[] accerriesNames = { "Accessories", "Bags & Purses", "Necklaces", "Rings", "Earrings", "Bracelets", "Body Jewelry", "All Jewelry"};
+        for(int i= 0; i < 8; i++){
+            Assert.assertEquals(etsySearchPage.jeweleryAndAccessoriesItems.get(i).getText(), accerriesNames[i]);
+
+        }
+        Waiter.pause(2);
+
+    }
+
+
 
 
 

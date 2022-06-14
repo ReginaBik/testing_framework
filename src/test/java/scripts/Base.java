@@ -33,7 +33,7 @@ public class Base {
     TGHomePage tgHomePage;
     Actions actions;
 
-    @BeforeMethod
+    @BeforeMethod(alwaysRun = true)
     public void setup(){
         driver = Driver.getDriver();
         explicitWait = new WebDriverWait(driver, 30);
@@ -56,7 +56,7 @@ public class Base {
         actions = new Actions(driver);
     }
 
-    @AfterMethod
+    @AfterMethod(alwaysRun = true)
     public void teardown(){
         softAssert.assertAll();
         Driver.quitDriver();

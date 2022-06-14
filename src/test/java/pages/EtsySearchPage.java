@@ -38,4 +38,10 @@ public class EtsySearchPage {
 
     @FindBy(css = "ul[data-ui='top-nav-category-list'] span")
     public List<WebElement> mainHeaderLinks;
+
+    @FindBy(css = "ul[data-node-id='10855']>li")
+    public List<WebElement> jeweleryAndAccessoriesItems;
+
+    @FindBy(id = "catnav-primary-link-10855")
+    public WebElement jeweleryButton;
 }
