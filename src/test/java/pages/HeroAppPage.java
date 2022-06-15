@@ -57,6 +57,15 @@ public class HeroAppPage {
     @FindBy(id = "uploaded-files")
     public WebElement uploadedFileText;
 
+    @FindBy(id = "username")
+    public WebElement username;
+
+    @FindBy(id = "password")
+    public WebElement password;
+
+    @FindBy(id = ".radius")
+    public WebElement loginButton;
+
 
 
     public void clickOnLink(String linkText){
