@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Parallel">
+    <test verbose="2" preserve-order="true"
+          name="Parallel" parallel="classes" thread-count="3">
+        <classes>
+            <class name="testng_learning._08A_Parallel">
+                <methods>
+                    <include name="testA1"/>
+                    <include name="testA2"/>
+                    <include name="testA3"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+    <test verbose="2" preserve-order="true"
+          name="/Users/reginabiktimirova/IdeaProjects/testng_framework/src/test/java/testng_learning/_08B_Parallel.java">
+        <classes>
+            <class name="testng_learning._08B_Parallel">
+                <methods>
+                    <include name="testB1"/>
+                    <include name="testB2"/>
+                    <include name="testB3"/>
+                </methods>
+            </class>
+            <class name="testng_learning._08C_Parallel">
+                <methods>
+                    <include name="testC1"/>
+                    <include name="testC2"/>
+                    <include name="testC3"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+    <test verbose="2" preserve-order="true"
+          name="/Users/reginabiktimirova/IdeaProjects/testng_framework/src/test/java/testng_learning/_08C_Parallel.java">
+        <classes/>
+    </test>
+</suite>
